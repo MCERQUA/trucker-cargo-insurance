@@ -30,11 +30,9 @@ export default function ContactPage() {
             </h2>
             <form
               className="space-y-6"
-              data-netlify="true"
-              name="quote-request"
+              action="#"
               method="POST"
             >
-              <input type="hidden" name="form-name" value="quote-request" />
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="relative">
