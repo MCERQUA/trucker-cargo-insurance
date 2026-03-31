@@ -1,10 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",
-  images: {
-    unoptimized: true,
-  },
+  // No output: "export" - let Netlify handle it with their plugin
 };
 
 export default nextConfig;
