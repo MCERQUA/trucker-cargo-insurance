@@ -37,7 +37,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2">
           <LocalShipping className="text-primary text-2xl" />
           <span className="text-xl font-extrabold tracking-tighter text-slate-900 font-headline">
-            The Kinetic Authority
+            Trucker Cargo Insurance
           </span>
         </Link>
 

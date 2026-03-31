@@ -334,7 +334,7 @@ export default function Home() {
             Ready to secure your journey?
           </h2>
           <p className="text-on-surface-variant text-xl mb-12 leading-relaxed">
-            Join thousands of professional drivers who trust The Kinetic Authority for their cargo
+            Join thousands of professional drivers who trust Trucker Cargo Insurance for their cargo
             liability and fleet insurance needs.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">

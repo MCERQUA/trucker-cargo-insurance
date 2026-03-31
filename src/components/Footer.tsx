@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="flex items-center gap-2">
             <LocalShipping className="text-secondary text-xl" />
             <span className="text-lg font-black font-headline text-slate-900 dark:text-white uppercase tracking-tighter">
-              The Kinetic Authority
+              Trucker Cargo Insurance
             </span>
           </div>
           <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
@@ -110,7 +110,7 @@ export default function Footer() {
               <Phone className="text-xl" />
             </a>
             <a
-              href="mailto:underwriting@thekineticauthority.com"
+              href="mailto:underwriting@truckercargoinsurance.com"
               className="text-slate-500 hover:text-secondary transition-colors"
               aria-label="Email"
             >
@@ -135,7 +135,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto px-8 py-8 border-t border-slate-200/50 dark:border-slate-800/50 text-center">
         <p className="text-slate-500 dark:text-slate-400 text-sm">
-          © {currentYear} The Kinetic Authority. Precision Logistics Insurance.
+          © {currentYear} Trucker Cargo Insurance. Precision Logistics Insurance.
         </p>
       </div>
     </footer>

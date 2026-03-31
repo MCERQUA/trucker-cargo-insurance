@@ -19,7 +19,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "The Kinetic Authority | Trucking Cargo Insurance",
+  title: "Trucker Cargo Insurance | Trucking Cargo Insurance",
   description:
     "High-performance insurance infrastructure for the trucking industry. Precision underwriting for modern fleets. Get bindable quotes in minutes.",
   keywords: [
