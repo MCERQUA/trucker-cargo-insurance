@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#f0f1f2",
+              "on-background": "#191c1d",
+              "tertiary-fixed-dim": "#a9c7ff",
+              "error-container": "#ffdad6",
+              "on-surface": "#191c1d",
+              "surface": "#f8f9fa",
+              "on-error-container": "#93000a",
+              "on-tertiary": "#ffffff",
+              "inverse-primary": "#adc7f8",
+              "error": "#ba1a1a",
+              "inverse-surface": "#2e3132",
+              "on-secondary-fixed-variant": "#7a3000",
+              "on-error": "#ffffff",
+              "surface-container": "#edeeef",
+              "surface-container-high": "#e7e8e9",
+              "on-tertiary-container": "#4a8be7",
+              "on-secondary-container": "#572000",
+              "tertiary-fixed": "#d6e3ff",
+              "on-primary": "#ffffff",
+              "on-primary-fixed": "#001b3d",
+              "tertiary": "#000e24",
+              "on-tertiary-fixed": "#001b3d",
+              "secondary-fixed": "#ffdbcc",
+              "secondary": "#a04100",
+              "outline": "#74777f",
+              "surface-bright": "#f8f9fa",
+              "on-secondary": "#ffffff",
+              "primary-fixed": "#d6e3ff",
+              "surface-container-low": "#f3f4f5",
+              "secondary-container": "#fe6b00",
+              "outline-variant": "#c4c6d0",
+              "primary-fixed-dim": "#adc7f8",
+              "tertiary-container": "#00234b",
+              "on-primary-fixed-variant": "#2c4771",
+              "surface-tint": "#455f8a",
+              "primary": "#000e24",
+              "secondary-fixed-dim": "#ffb693",
+              "primary-container": "#00234b",
+              "surface-container-lowest": "#ffffff",
+              "surface-dim": "#d9dadb",
+              "on-surface-variant": "#43474e",
+              "on-tertiary-fixed-variant": "#00468c",
+              "surface-container-highest": "#e1e3e4",
+              "background": "#f8f9fa",
+              "on-primary-container": "#718bb9",
+              "on-secondary-fixed": "#351000",
+              "surface-variant": "#e1e3e4"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #000e24 0%, #00234b 100%);
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-50" data-icon="local_shipping">local_shipping</span>
+<span class="text-xl font-extrabold tracking-tighter text-slate-900 dark:text-slate-50 font-headline">The Kinetic Authority</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-orange-600 dark:hover:text-orange-400 transition-colors" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-orange-600 dark:hover:text-orange-400 transition-colors" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-orange-600 dark:hover:text-orange-400 transition-colors" href="#">Blog</a>
+<a class="text-orange-600 dark:text-orange-500 font-bold border-b-2 border-orange-600" href="#">Resources</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-orange-600 dark:hover:text-orange-400 transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-secondary text-on-secondary px-5 py-2 rounded-xl font-bold tracking-tight scale-95 active:scale-90 transition-transform">
+                GET A QUOTE
+            </button>
+</div>
+</nav>
+<main class="pt-24 pb-20">
+<!-- Hero Section -->
+<header class="relative px-6 py-16 md:py-24 kinetic-gradient overflow-hidden">
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="md:w-2/3">
+<h1 class="text-4xl md:text-6xl font-headline font-extrabold text-white tracking-tight mb-6">
+                        Resource Intelligence Hub
+                    </h1>
+<p class="text-lg md:text-xl text-on-primary-container leading-relaxed max-w-2xl">
+                        Access high-performance tools, safety manuals, and compliance documentation engineered for the modern logistics professional.
+                    </p>
+</div>
+</div>
+<div class="absolute right-0 top-0 w-1/3 h-full opacity-20 hidden lg:block">
+<img alt="logistics center" class="w-full h-full object-cover" data-alt="Modern logistics warehouse interior with high-tech shelving and cinematic blue lighting to reflect precision and authority." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM8B3OeHXKyH8AtIXDwgL4ug_4svpyq4EB2JiwrqRAz5ttNqvL765unQeilq7QGv3H2Iw2eDEhiU89w2fnJ5tSgjus6QSogeZSoJzt7FR1_oD6n_8fMUjQBFvpUYMAao4y0eVCpUqyKE4RKtUYdJDLg2bngn6xM5gblnHhQPdX52lSkYPn3VBJ_-_a0hHQnyt7fAlOR554AmNBI_EB5_uVEwD2PF3r6lqEix1w6SCGDiBFcLK6_bhDgL_sqKS7Ao0THMvYoMJqD1qq"/>
+</div>
+</header>
+<!-- Search & Filter Area (Surface Container Low background transition) -->
+<section class="bg-surface-container-low py-12 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex flex-col md:flex-row gap-4 items-center">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full pl-12 pr-4 py-3 bg-surface-container-high border-none border-b-2 border-outline focus:border-secondary transition-all rounded-t-lg" placeholder="Search resources, guides, or FAQs..." type="text"/>
+</div>
+<div class="flex gap-2 w-full md:w-auto">
+<button class="bg-primary text-on-primary px-6 py-3 rounded-xl font-bold whitespace-nowrap w-full">Find Resource</button>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 py-20 max-w-7xl mx-auto">
+<div class="mb-12">
+<h2 class="text-3xl font-headline font-bold text-primary mb-2">Essential Guides</h2>
+<p class="text-on-surface-variant">Industry-standard documentation for fleet safety and risk management.</p>
+</div>
+<!-- Bento Grid for Downloads -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Driver Safety Guide -->
+<div class="group bg-surface-container-lowest p-8 rounded-full flex flex-col justify-between hover:bg-white hover:shadow-lg transition-all border border-transparent hover:border-outline-variant/20">
+<div>
+<div class="w-12 h-12 bg-secondary-fixed text-on-secondary-fixed rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="security">security</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-3">Driver Safety Guide</h3>
+<p class="text-sm text-on-surface-variant mb-8 leading-relaxed">Comprehensive protocols for maintaining safety standards during long-haul transit and cargo handling.</p>
+</div>
+<a class="flex items-center gap-2 text-secondary font-bold group-hover:underline" href="#">
+<span class="material-symbols-outlined" data-icon="download">download</span>
+                        DOWNLOAD PDF (4.2 MB)
+                    </a>
+</div>
+<!-- FMCSA Compliance Checklist -->
+<div class="group bg-surface-container-lowest p-8 rounded-full flex flex-col justify-between hover:bg-white hover:shadow-lg transition-all border border-transparent hover:border-outline-variant/20">
+<div>
+<div class="w-12 h-12 bg-primary-fixed text-on-primary-fixed rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="fact_check">fact_check</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-3">FMCSA Compliance</h3>
+<p class="text-sm text-on-surface-variant mb-8 leading-relaxed">Stay up to date with the latest Federal Motor Carrier Safety Administration regulations and requirements.</p>
+</div>
+<a class="flex items-center gap-2 text-secondary font-bold group-hover:underline" href="#">
+<span class="material-symbols-outlined" data-icon="download">download</span>
+                        DOWNLOAD PDF (2.8 MB)
+                    </a>
+</div>
+<!-- Cargo Liability Whitepaper -->
+<div class="group bg-surface-container-lowest p-8 rounded-full flex flex-col justify-between hover:bg-white hover:shadow-lg transition-all border border-transparent hover:border-outline-variant/20">
+<div>
+<div class="w-12 h-12 bg-tertiary-fixed text-on-tertiary-fixed rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-3">Liability Framework</h3>
+<p class="text-sm text-on-surface-variant mb-8 leading-relaxed">An in-depth look at cargo liability insurance and how to protect your fleet from unforeseen claims.</p>
+</div>
+<a class="flex items-center gap-2 text-secondary font-bold group-hover:underline" href="#">
+<span class="material-symbols-outlined" data-icon="download">download</span>
+                        DOWNLOAD PDF (6.1 MB)
+                    </a>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="bg-surface-container-low py-24 px-6">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-headline font-bold text-primary mb-4">Frequently Asked Questions</h2>
+<p class="text-on-surface-variant">Quick answers to the most common cargo insurance queries.</p>
+</div>
+<div class="space-y-4">
+<!-- Accordion Item 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<button class="w-full px-8 py-6 flex items-center justify-between text-left font-bold text-primary hover:bg-surface-container transition-colors">
+<span>How is my cargo premium calculated?</span>
+<span class="material-symbols-outlined text-secondary" data-icon="expand_more">expand_more</span>
+</button>
+<div class="px-8 pb-6 text-on-surface-variant text-sm leading-relaxed">
+                            Premiums are calculated based on commodity type, average load value, haul radius, and the safety history of your motor carrier authority. We use precision analytics to ensure your rate reflects your actual risk profile.
+                        </div>
+</div>
+<!-- Accordion Item 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<button class="w-full px-8 py-6 flex items-center justify-between text-left font-bold text-primary hover:bg-surface-container transition-colors">
+<span>What is the difference between General Liability and Cargo Insurance?</span>
+<span class="material-symbols-outlined text-secondary" data-icon="expand_more">expand_more</span>
+</button>
+<div class="hidden px-8 pb-6 text-on-surface-variant text-sm leading-relaxed">
+                            General Liability covers bodily injury or property damage to third parties, while Cargo Insurance specifically covers the goods being transported in the event of theft, fire, or accidental damage.
+                        </div>
+</div>
+<!-- Accordion Item 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<button class="w-full px-8 py-6 flex items-center justify-between text-left font-bold text-primary hover:bg-surface-container transition-colors">
+<span>Does my policy cover Reefer breakdown?</span>
+<span class="material-symbols-outlined text-secondary" data-icon="expand_more">expand_more</span>
+</button>
+<div class="hidden px-8 pb-6 text-on-surface-variant text-sm leading-relaxed">
+                            Yes, we offer specialized endorsements for Reefer Breakdown that cover cargo spoilage due to mechanical failure of the refrigeration unit, provided maintenance schedules have been met.
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- External Links / Quick Access -->
+<section class="px-6 py-20 max-w-7xl mx-auto">
+<div class="bg-primary-container rounded-full p-8 md:p-12 relative overflow-hidden">
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-3xl font-headline font-bold text-white mb-6">Government &amp; Regulatory Access</h2>
+<p class="text-on-primary-container mb-8">Access official federal portals for licensing, safety records, and regulatory filings directly from the Authority hub.</p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-white text-primary px-6 py-3 rounded-xl font-bold flex items-center gap-2 hover:bg-secondary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="open_in_new">open_in_new</span>
+                                FMCSA Portal
+                            </a>
+<a class="bg-white/10 text-white border border-white/20 px-6 py-3 rounded-xl font-bold flex items-center gap-2 hover:bg-white/20 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="link">link</span>
+                                DOT Regulations
+                            </a>
+</div>
+</div>
+<div class="flex justify-center md:justify-end">
+<img alt="truck on road" class="w-full max-w-sm rounded-xl shadow-2xl rotate-3 group-hover:rotate-0 transition-transform" data-alt="A clean white semi-truck driving on a scenic highway at dusk, representing moving cargo and federal compliance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQW3Km47wi_RFVCh7F9pRkyOoUiowV3Vs6bUGDtAryCF10X6BZ5_tszQgGgzslxq_F1z55PEHybDTpEVwbqmnP_u9raizAlLusvCtLp5s3yp_NQs2i8ysZm3o_loFB8T6MXWiteqpULzvtQFsFQh2Stl0om79rKEBm64eU69ZJr3wRHso-p1EOUsXSsS1IUDLbKZ1QXwAq1l3nvNgAxKyJtKRik7_UCVgTmDjgISHO_Pop7uVD0iMLZYedPgCovpIK3-VhUl6HSQrU"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full rounded-t-3xl">
+<div class="w-full px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-lg font-black font-['Manrope'] text-slate-900 dark:text-white mb-4">The Kinetic Authority</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                    Setting the gold standard in logistics insurance. Precision-engineered coverage for the heavy-duty world.
+                </p>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white mb-6 uppercase text-xs tracking-widest">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-slate-900 dark:hover:text-slate-50 underline transition-all" href="#">Cargo Liability</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-slate-900 dark:hover:text-slate-50 underline transition-all" href="#">FMCSA Compliance</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-slate-900 dark:hover:text-slate-50 underline transition-all" href="#">Fleet Safety</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white mb-6 uppercase text-xs tracking-widest">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-slate-900 dark:hover:text-slate-50 underline transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-slate-900 dark:hover:text-slate-50 underline transition-all" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white mb-6 uppercase text-xs tracking-widest">Contact</h4>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                    1200 Logistics Way<br/>
+                    Suite 400<br/>
+                    Dallas, TX 75201
+                </p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-8 border-t border-slate-200/50 dark:border-slate-800/50 text-center md:text-left">
+<p class="text-slate-400 text-xs uppercase tracking-tighter">© 2024 The Kinetic Authority. Precision Logistics Insurance.</p>
+</div>
+</footer>
+<!-- Mobile Bottom Nav -->
+<nav class="fixed bottom-0 w-full z-50 lg:hidden bg-white/90 dark:bg-slate-950/90 backdrop-blur-lg shadow-[0_-4px_20px_rgba(0,14,36,0.08)]">
+<div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe">
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 tap-highlight-transparent duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 tap-highlight-transparent duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-orange-600 dark:text-orange-500 bg-orange-50 dark:bg-orange-900/20 rounded-xl px-3 py-1 tap-highlight-transparent duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Resources</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 tap-highlight-transparent duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="request_quote">request_quote</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Contact</span>
+</a>
+</div>
+</nav>
+</body></html>
