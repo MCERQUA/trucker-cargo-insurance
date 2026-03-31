@@ -1,9 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "out"
+  publish = ".next"
 
 [build.environment]
   NODE_VERSION = "20"
-
-# Disable all plugins - using Next.js 16 built-in support
-[plugins]
