@@ -192,7 +192,7 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-bold text-sm uppercase tracking-wider text-primary">Email</h4>
                   <p className="text-on-surface-variant text-sm">
-                    underwriting@thekineticauthority.com
+                    underwriting@truckercargoinsurance.com
                   </p>
                 </div>
               </div>
