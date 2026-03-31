@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "inverse-on-surface": "#f0f1f2",
+            "on-background": "#191c1d",
+            "tertiary-fixed-dim": "#a9c7ff",
+            "error-container": "#ffdad6",
+            "on-surface": "#191c1d",
+            "surface": "#f8f9fa",
+            "on-error-container": "#93000a",
+            "on-tertiary": "#ffffff",
+            "inverse-primary": "#adc7f8",
+            "error": "#ba1a1a",
+            "inverse-surface": "#2e3132",
+            "on-secondary-fixed-variant": "#7a3000",
+            "on-error": "#ffffff",
+            "surface-container": "#edeeef",
+            "surface-container-high": "#e7e8e9",
+            "on-tertiary-container": "#4a8be7",
+            "on-secondary-container": "#572000",
+            "tertiary-fixed": "#d6e3ff",
+            "on-primary": "#ffffff",
+            "on-primary-fixed": "#001b3d",
+            "tertiary": "#000e24",
+            "on-tertiary-fixed": "#001b3d",
+            "secondary-fixed": "#ffdbcc",
+            "secondary": "#a04100",
+            "outline": "#74777f",
+            "surface-bright": "#f8f9fa",
+            "on-secondary": "#ffffff",
+            "primary-fixed": "#d6e3ff",
+            "surface-container-low": "#f3f4f5",
+            "secondary-container": "#fe6b00",
+            "outline-variant": "#c4c6d0",
+            "primary-fixed-dim": "#adc7f8",
+            "tertiary-container": "#00234b",
+            "on-primary-fixed-variant": "#2c4771",
+            "surface-tint": "#455f8a",
+            "primary": "#000e24",
+            "secondary-fixed-dim": "#ffb693",
+            "primary-container": "#00234b",
+            "surface-container-lowest": "#ffffff",
+            "surface-dim": "#d9dadb",
+            "on-surface-variant": "#43474e",
+            "on-tertiary-fixed-variant": "#00468c",
+            "surface-container-highest": "#e1e3e4",
+            "background": "#f8f9fa",
+            "on-primary-container": "#718bb9",
+            "on-secondary-fixed": "#351000",
+            "surface-variant": "#e1e3e4"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .kinetic-layer {
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .kinetic-layer:hover {
+      transform: translateY(-8px);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="local_shipping">local_shipping</span>
+<span class="text-xl font-extrabold tracking-tighter text-slate-900 font-headline">The Kinetic Authority</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 font-medium hover:text-orange-600 transition-colors" href="#">Home</a>
+<a class="text-slate-600 font-medium hover:text-orange-600 transition-colors" href="#">Services</a>
+<a class="text-orange-600 font-bold border-b-2 border-orange-600" href="#">Blog</a>
+<a class="text-slate-600 font-medium hover:text-orange-600 transition-colors" href="#">Resources</a>
+<a class="text-slate-600 font-medium hover:text-orange-600 transition-colors" href="#">Contact</a>
+</nav>
+<button class="bg-secondary hover:bg-secondary-container text-white px-5 py-2.5 rounded-xl font-bold text-sm tracking-tight scale-95 active:scale-90 transition-transform">
+        GET A QUOTE
+      </button>
+</div>
+</header>
+<main class="pt-24 pb-20">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 py-12 md:py-20">
+<div class="flex flex-col md:flex-row items-end gap-6 mb-16">
+<div class="flex-1">
+<span class="inline-block px-3 py-1 bg-primary text-on-primary-container text-[10px] font-bold uppercase tracking-[0.2em] mb-4 rounded-sm">Knowledge Hub</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold tracking-tighter text-primary leading-[0.95]">
+            Kinetic Insights <br/> &amp; Strategy.
+          </h1>
+</div>
+<div class="flex-1 max-w-xl">
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6">
+            Stay ahead of shifting FMCSA regulations, master fleet risk mitigation, and discover how precision logistics insurance powers the modern supply chain.
+          </p>
+<div class="h-[2px] w-24 bg-secondary"></div>
+</div>
+</div>
+<!-- Featured Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-20">
+<!-- Main Featured Card -->
+<article class="md:col-span-8 group relative overflow-hidden bg-surface-container-low rounded-full kinetic-layer">
+<div class="aspect-[16/9] overflow-hidden">
+<img alt="Heavy duty truck on open road" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Powerful modern semi-truck driving on an expansive highway through a desert landscape during sunrise with golden light flares" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8nx2Ety1SmWnTN4m7TzWvZj_To5xgqtso3RxsxG1VmcgAdqm_FchTL9DmjsHpSCh9L9r5qGLpsr16FnRMDWVSIomurS274gdVkO-EycK7kkelex3I4OHxYepPcDqhgdwvXaLSo27YC5SBUxMZIH_TQCN7we5fuh87jr6yEFhaLt5w6yfS1k_SjdQUhSxcBtkjjpQ6pbpvNKf0WO_3AZ-1g7FRTjmy7m1GhLJo7OqIqeMDsDuFOY-wPnWr0pqYFxCBMunkUKrXeitI"/>
+</div>
+<div class="p-8 md:p-12 bg-surface-container-low">
+<div class="flex items-center gap-4 mb-4">
+<span class="text-xs font-bold uppercase tracking-widest text-secondary">Safety Regulations</span>
+<span class="text-xs text-on-surface-variant font-medium">12 MIN READ</span>
+</div>
+<h2 class="text-3xl md:text-4xl font-headline font-bold text-primary mb-6 group-hover:text-secondary transition-colors">The 2024 FMCSA Compliance Roadmap: What Fleet Managers Need to Know Now</h2>
+<p class="text-on-surface-variant text-lg mb-8 max-w-2xl">
+              From updated ELD mandates to new standards in carrier safety ratings, we break down the critical regulatory shifts impacting your liability coverage this year.
+            </p>
+<button class="flex items-center gap-2 font-bold text-primary hover:text-secondary transition-colors group/btn">
+              READ FULL ANALYSIS
+              <span class="material-symbols-outlined translate-x-0 group-hover/btn:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Secondary Featured Stack -->
+<div class="md:col-span-4 flex flex-col gap-6">
+<article class="flex-1 bg-primary text-white p-8 rounded-full flex flex-col justify-between group cursor-pointer kinetic-layer">
+<div>
+<span class="inline-block px-2 py-1 bg-secondary text-[10px] font-bold uppercase tracking-widest mb-4">Trending</span>
+<h3 class="text-2xl font-headline font-bold leading-tight mb-4 group-hover:text-secondary-container transition-colors">AI-Driven Risk: The Future of Cargo Underwriting</h3>
+</div>
+<span class="material-symbols-outlined text-4xl text-on-primary-container" data-icon="analytics">analytics</span>
+</article>
+<article class="flex-1 bg-surface-container-highest p-8 rounded-full flex flex-col justify-between group cursor-pointer kinetic-layer">
+<div>
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-4 block">Insurance Tips</span>
+<h3 class="text-2xl font-headline font-bold text-primary leading-tight group-hover:text-secondary transition-colors">5 Hidden Gaps in Standard Cargo Liability</h3>
+</div>
+<p class="text-sm text-on-surface-variant line-clamp-2">Ensure your specific commodities aren't excluded from your primary policy coverage...</p>
+</article>
+</div>
+</div>
+<!-- Article Filter/Category Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12 py-8 border-y-0 bg-surface-container-low px-8 rounded-xl">
+<div class="flex flex-wrap gap-4">
+<button class="px-6 py-2 bg-primary text-white font-bold rounded-xl text-sm">All Updates</button>
+<button class="px-6 py-2 bg-white text-primary font-bold rounded-xl text-sm hover:bg-slate-100 transition-colors">Safety</button>
+<button class="px-6 py-2 bg-white text-primary font-bold rounded-xl text-sm hover:bg-slate-100 transition-colors">Fleet Tech</button>
+<button class="px-6 py-2 bg-white text-primary font-bold rounded-xl text-sm hover:bg-slate-100 transition-colors">Market Trends</button>
+</div>
+<div class="relative">
+<input class="pl-12 pr-6 py-3 bg-white border-none rounded-xl focus:ring-2 focus:ring-secondary w-full md:w-64 text-sm font-medium" placeholder="Search insights..." type="text"/>
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant" data-icon="search">search</span>
+</div>
+</div>
+<!-- Post Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<!-- Card 1 -->
+<article class="group kinetic-layer">
+<div class="aspect-video rounded-xl overflow-hidden mb-6 bg-surface-container-high">
+<img alt="Driver inspection" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A professional truck driver in high-visibility gear performing a pre-trip safety inspection on a shiny chrome tractor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9ZSv2At3b57vVyZJic92SmjGB4m2KaL1XMt-9lwXmcVLgcp6szn5qsXPMulLCRWmid9lnXazpE_RAoYFTKQow9LOlZwEaTi7RZRJiJF1xTA8CjHID8XVphMstXcKc-oQFZgwCZT1y2fxbXx6nGH2c9nc1FlpsQzFoiZ6XfSqP67Gi9D9-t7qQwhWBiFlL6XnHskuNjhyyNdtEplNvfQ406mP1qNuRTUF9hBYaoPaok2vJJ7pbmSqbq5tR59gB2edtFsWu_j4M8brU"/>
+</div>
+<div class="flex items-center gap-3 mb-3">
+<span class="text-[10px] font-black uppercase tracking-[0.15em] text-on-surface-variant px-2 py-0.5 bg-surface-container-high rounded">Regulation</span>
+<span class="text-xs text-on-surface-variant">May 14, 2024</span>
+</div>
+<h3 class="text-xl font-headline font-bold text-primary mb-3 leading-snug group-hover:text-secondary transition-colors">Mastering Pre-Trip Inspections to Lower Claims</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Learn how a documented pre-trip ritual can serve as your first line of defense during liability investigations.</p>
+<a class="inline-flex items-center text-sm font-bold text-primary group/link" href="#">
+            Read More
+            <span class="material-symbols-outlined text-lg ml-1 group-hover/link:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</a>
+</article>
+<!-- Card 2 -->
+<article class="group kinetic-layer">
+<div class="aspect-video rounded-xl overflow-hidden mb-6 bg-surface-container-high">
+<img alt="Port logistics" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Busy commercial shipping port at dusk with towering blue cranes and stacks of multi-colored containers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxBEJfXWdc2XoIlg-resQFsYxMJ15ZtwtWorH6TpO_n5Cf4WvtXa3k8zZRgglfaJvFPvWNoG0ingyrmR4oj0UXN-xqzrfDAinoaCPSpMwChtaWdyRger1t9thFsORPClpfYAr9vqIbEYlKvvnElxE5lEb9DqMOaTs01pbAbSG54ej3pjjkuIZEHqynZ_k50TQe-WNlpxVV12IianET3zb6qJXswDFTmNth65hsiFXA64EtJsrFegTlI46l2V_WIYBYakcnVcBOiQ0x"/>
+</div>
+<div class="flex items-center gap-3 mb-3">
+<span class="text-[10px] font-black uppercase tracking-[0.15em] text-on-surface-variant px-2 py-0.5 bg-surface-container-high rounded">Market Trends</span>
+<span class="text-xs text-on-surface-variant">May 09, 2024</span>
+</div>
+<h3 class="text-xl font-headline font-bold text-primary mb-3 leading-snug group-hover:text-secondary transition-colors">Global Supply Chain Volatility &amp; Cargo Rates</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Analyzing the correlation between international port congestion and domestic insurance premiums.</p>
+<a class="inline-flex items-center text-sm font-bold text-primary group/link" href="#">
+            Read More
+            <span class="material-symbols-outlined text-lg ml-1 group-hover/link:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</a>
+</article>
+<!-- Card 3 -->
+<article class="group kinetic-layer">
+<div class="aspect-video rounded-xl overflow-hidden mb-6 bg-surface-container-high">
+<img alt="Cyber security" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Abstract digital network visualization with orange glowing nodes and flowing data lines on a deep navy background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJf0TKEN5Lrf3qz742YyHXyNAanCQvBwseCaEUZGohK0rEnl-4SPQMlMpaai9XI7ga_BINQ1iG_BzzyjpQgmhly4ZtjfFmHJZ9cS1pZMXsyRl4AuRB7sgrAl0DeBZfOTbnj81AX-HN8peS_k704L6IuEknbbX70Btvvq7nnKjEvG4oJBLYhGkfKNEX_UrekqL_IeQQEtDol-9lgy6ThSF14eonKyHBR7h0bn1xa3DYAcctlxjPZFdz5VWTO9EJl1c5Fz5SXq_NSMRE"/>
+</div>
+<div class="flex items-center gap-3 mb-3">
+<span class="text-[10px] font-black uppercase tracking-[0.15em] text-on-surface-variant px-2 py-0.5 bg-surface-container-high rounded">Fleet Tech</span>
+<span class="text-xs text-on-surface-variant">May 02, 2024</span>
+</div>
+<h3 class="text-xl font-headline font-bold text-primary mb-3 leading-snug group-hover:text-secondary transition-colors">Protecting Your Fleet from Digital Cargo Theft</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Cyber-criminals are targeting logistics dispatch. Here’s how to secure your operational data.</p>
+<a class="inline-flex items-center text-sm font-bold text-primary group/link" href="#">
+            Read More
+            <span class="material-symbols-outlined text-lg ml-1 group-hover/link:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</a>
+</article>
+<!-- Card 4 -->
+<article class="group kinetic-layer">
+<div class="aspect-video rounded-xl overflow-hidden mb-6 bg-surface-container-high">
+<img alt="Road at night" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Time-lapse of car lights on a highway bridge at night creating long light trails in a cool blue and orange color palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb1GG12umPaoQaQjNOYvPkqVBkLoz4w-aoyScZeUOTJ4eSdum1KYlL2MA8jptVEnua18A0Q1wAtNfD48xxQRZUU_54VJfc1ks_VN7H5vYKM_R7BJeNvCaqA1dqt0XRmiRIEmYNW9jfWPHr5pskKs4ezyP_c1zWnYcwy7099sY3HKsoz7v76yQIo8pkXGe8Z9WUsThn4LFg2QBzFC2_atMgRdrewWZiD1pBHaMNtlCcclw9lmH6WrlBAlPMdb5elJvxCcblTJJP4oLM"/>
+</div>
+<div class="flex items-center gap-3 mb-3">
+<span class="text-[10px] font-black uppercase tracking-[0.15em] text-on-surface-variant px-2 py-0.5 bg-surface-container-high rounded">Insurance Tips</span>
+<span class="text-xs text-on-surface-variant">April 28, 2024</span>
+</div>
+<h3 class="text-xl font-headline font-bold text-primary mb-3 leading-snug group-hover:text-secondary transition-colors">Demystifying Reefer Breakdown Coverage</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Prevent catastrophic loss of perishable cargo with precise endorsement structuring.</p>
+<a class="inline-flex items-center text-sm font-bold text-primary group/link" href="#">
+            Read More
+            <span class="material-symbols-outlined text-lg ml-1 group-hover/link:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</a>
+</article>
+<!-- Card 5 -->
+<article class="group kinetic-layer">
+<div class="aspect-video rounded-xl overflow-hidden mb-6 bg-surface-container-high">
+<img alt="Dashboard" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Close up of a modern digital truck dashboard glowing in low light with various telemetry data displays" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK64OjioVT2bRuA1AoMwMOjVp825znZX6jPXD7Cq0EZSnqcf1JMOxcEM-siKfTnZb91W1OHlI4ylj-QAAdNg5wGUvGBqTyVCmgDBZrHHnFv3Tt266YIhsR6y9VoyH_LjsHHv_0ESvypk_YIT0ZwsQactcx6P7DxD6ayveirveWgGPk0XnIlbOxSDt49yWxD3_wdy98U9K9_R0KKPUV6w8kVvlZHfRr3Mg28FDFCUM4P7wvE9flbIWhcM4nzJYYkSCXD9cINAiNF9HR"/>
+</div>
+<div class="flex items-center gap-3 mb-3">
+<span class="text-[10px] font-black uppercase tracking-[0.15em] text-on-surface-variant px-2 py-0.5 bg-surface-container-high rounded">Fleet Tech</span>
+<span class="text-xs text-on-surface-variant">April 21, 2024</span>
+</div>
+<h3 class="text-xl font-headline font-bold text-primary mb-3 leading-snug group-hover:text-secondary transition-colors">Telematics: The Ultimate Premium Reduction Tool</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">How sharing your safety data with underwriters can slash your annual cargo premiums.</p>
+<a class="inline-flex items-center text-sm font-bold text-primary group/link" href="#">
+            Read More
+            <span class="material-symbols-outlined text-lg ml-1 group-hover/link:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</a>
+</article>
+<!-- Card 6 -->
+<article class="group kinetic-layer">
+<div class="aspect-video rounded-xl overflow-hidden mb-6 bg-surface-container-high">
+<img alt="Highway patrol" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Modern law enforcement vehicle parked on the shoulder of a highway with blue and red lights reflected on the asphalt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADNE75d2zXEp1q8zcTTr1tgX0uqd6fxa8pDevNrmVJ2BC5GNKkaELM85Qrdh3M7jiXrryi1ogQJpyDHoCi-e9xjWRqUzXe99KcSZjn3squqQBxNxmP3OioMnqcmSJtXaS1tzEbsaZx1tZptOAUtKWK0MebAi8S4b2V7Mo8V1FxnRO0dhg8wKS1duZFHNy5-dje4s2TsrObUB2Fn_SrNw2T4p9MYzgB90cJrRnXGVZGwiyg7heK1i_Dco5V27sjnC-SLPkVi8XObuVH"/>
+</div>
+<div class="flex items-center gap-3 mb-3">
+<span class="text-[10px] font-black uppercase tracking-[0.15em] text-on-surface-variant px-2 py-0.5 bg-surface-container-high rounded">Regulation</span>
+<span class="text-xs text-on-surface-variant">April 15, 2024</span>
+</div>
+<h3 class="text-xl font-headline font-bold text-primary mb-3 leading-snug group-hover:text-secondary transition-colors">Understanding the DataQs Challenge Process</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Incorrect inspection data can haunt your insurance rates. Learn how to fight back and win.</p>
+<a class="inline-flex items-center text-sm font-bold text-primary group/link" href="#">
+            Read More
+            <span class="material-symbols-outlined text-lg ml-1 group-hover/link:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</a>
+</article>
+</div>
+<!-- Pagination -->
+<div class="flex justify-center mt-20">
+<nav class="flex items-center gap-2">
+<button class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container text-on-surface-variant hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="keyboard_arrow_left">keyboard_arrow_left</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-xl bg-primary text-white font-bold">1</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-xl bg-white text-primary font-bold hover:bg-surface-container transition-colors">2</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-xl bg-white text-primary font-bold hover:bg-surface-container transition-colors">3</button>
+<span class="px-2 text-on-surface-variant">...</span>
+<button class="w-12 h-12 flex items-center justify-center rounded-xl bg-white text-primary font-bold hover:bg-surface-container transition-colors">12</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container text-on-surface-variant hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="keyboard_arrow_right">keyboard_arrow_right</span>
+</button>
+</nav>
+</div>
+</section>
+<!-- Newsletter Anchor -->
+<section class="max-w-7xl mx-auto px-6 mb-20">
+<div class="bg-primary rounded-full p-12 md:p-20 relative overflow-hidden">
+<div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-white mb-6 leading-tight">Master the Road.<br/>Subscribe to the Authority.</h2>
+<p class="text-on-primary-container text-lg max-w-md">Get bi-weekly logistics insurance intelligence, regulatory alerts, and fleet safety strategies delivered direct.</p>
+</div>
+<div>
+<form class="flex flex-col sm:flex-row gap-4">
+<input class="flex-1 bg-tertiary-container border-none rounded-xl text-white px-6 py-4 placeholder:text-slate-500 focus:ring-2 focus:ring-secondary" placeholder="Fleet Manager Email" type="email"/>
+<button class="bg-secondary hover:bg-secondary-container text-white px-8 py-4 rounded-xl font-bold transition-all">JOIN NOW</button>
+</form>
+<p class="text-[10px] text-slate-500 mt-4 uppercase tracking-widest">No spam. Only high-performance logistics insights.</p>
+</div>
+</div>
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-secondary/10 rounded-full blur-3xl"></div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Shell (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-white/90 dark:bg-slate-950/90 backdrop-blur-lg shadow-[0_-4px_20px_rgba(0,14,36,0.08)] lg:hidden z-50">
+<a class="flex flex-col items-center justify-center text-slate-500" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500" href="#">
+<span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-orange-600 bg-orange-50 rounded-xl px-3 py-1" href="#">
+<span class="material-symbols-outlined" data-icon="newspaper">newspaper</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Blog</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Resources</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500" href="#">
+<span class="material-symbols-outlined" data-icon="request_quote">request_quote</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Contact</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full rounded-t-3xl pt-20 pb-10">
+<div class="w-full px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="local_shipping">local_shipping</span>
+<span class="text-lg font-black font-['Manrope'] text-slate-900">THE KINETIC AUTHORITY</span>
+</div>
+<p class="text-slate-500 text-sm leading-relaxed mb-8">Engineering precision in logistics insurance. We provide the coverage that moves the industry forward.</p>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 mb-6 uppercase tracking-wider text-xs">Navigation</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-slate-900 underline-offset-4 hover:underline transition-all text-sm" href="#">Services</a></li>
+<li><a class="text-orange-600 underline text-sm" href="#">Blog &amp; News</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 underline-offset-4 hover:underline transition-all text-sm" href="#">Claims Portal</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 underline-offset-4 hover:underline transition-all text-sm" href="#">Quote Engine</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 mb-6 uppercase tracking-wider text-xs">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-slate-900 underline-offset-4 hover:underline transition-all text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 underline-offset-4 hover:underline transition-all text-sm" href="#">Terms of Service</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 underline-offset-4 hover:underline transition-all text-sm" href="#">Cargo Liability</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 underline-offset-4 hover:underline transition-all text-sm" href="#">FMCSA Compliance</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 mb-6 uppercase tracking-wider text-xs">Contact</h4>
+<p class="text-slate-500 text-sm mb-4">100 Authority Plaza<br/>Houston, TX 77002</p>
+<p class="text-slate-900 font-bold text-sm">888-KINETIC-LOG</p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 pt-8 mt-8 border-t border-slate-200">
+<p class="text-slate-400 text-xs text-center">© 2024 The Kinetic Authority. Precision Logistics Insurance. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

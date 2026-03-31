@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "inverse-on-surface": "#f0f1f2",
+            "on-background": "#191c1d",
+            "tertiary-fixed-dim": "#a9c7ff",
+            "error-container": "#ffdad6",
+            "on-surface": "#191c1d",
+            "surface": "#f8f9fa",
+            "on-error-container": "#93000a",
+            "on-tertiary": "#ffffff",
+            "inverse-primary": "#adc7f8",
+            "error": "#ba1a1a",
+            "inverse-surface": "#2e3132",
+            "on-secondary-fixed-variant": "#7a3000",
+            "on-error": "#ffffff",
+            "surface-container": "#edeeef",
+            "surface-container-high": "#e7e8e9",
+            "on-tertiary-container": "#4a8be7",
+            "on-secondary-container": "#572000",
+            "tertiary-fixed": "#d6e3ff",
+            "on-primary": "#ffffff",
+            "on-primary-fixed": "#001b3d",
+            "tertiary": "#000e24",
+            "on-tertiary-fixed": "#001b3d",
+            "secondary-fixed": "#ffdbcc",
+            "secondary": "#a04100",
+            "outline": "#74777f",
+            "surface-bright": "#f8f9fa",
+            "on-secondary": "#ffffff",
+            "primary-fixed": "#d6e3ff",
+            "surface-container-low": "#f3f4f5",
+            "secondary-container": "#fe6b00",
+            "outline-variant": "#c4c6d0",
+            "primary-fixed-dim": "#adc7f8",
+            "tertiary-container": "#00234b",
+            "on-primary-fixed-variant": "#2c4771",
+            "surface-tint": "#455f8a",
+            "primary": "#000e24",
+            "secondary-fixed-dim": "#ffb693",
+            "primary-container": "#00234b",
+            "surface-container-lowest": "#ffffff",
+            "surface-dim": "#d9dadb",
+            "on-surface-variant": "#43474e",
+            "on-tertiary-fixed-variant": "#00468c",
+            "surface-container-highest": "#e1e3e4",
+            "background": "#f8f9fa",
+            "on-primary-container": "#718bb9",
+            "on-secondary-fixed": "#351000",
+            "surface-variant": "#e1e3e4"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .kinetic-gradient {
+      background: linear-gradient(135deg, #000e24 0%, #00234b 100%);
+    }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+    }
+    .tap-highlight-transparent {
+      -webkit-tap-highlight-color: transparent;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="local_shipping">local_shipping</span>
+<span class="text-xl font-extrabold tracking-tighter text-slate-900 dark:text-slate-50 font-headline">The Kinetic Authority</span>
+</div>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-orange-600 dark:hover:text-orange-400 transition-colors" href="#">Home</a>
+<a class="text-orange-600 dark:text-orange-500 font-bold border-b-2 border-orange-600 hover:text-orange-600 dark:hover:text-orange-400 transition-colors" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-orange-600 dark:hover:text-orange-400 transition-colors" href="#">Blog</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-orange-600 dark:hover:text-orange-400 transition-colors" href="#">Resources</a>
+</nav>
+<button class="hidden md:block bg-secondary hover:bg-secondary-container text-on-secondary px-6 py-2 rounded-lg font-bold tracking-tight transition-transform scale-95 active:scale-90 font-headline">
+        GET A QUOTE
+      </button>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-20 md:pb-32">
+<!-- Hero Section -->
+<section class="relative px-6 py-16 md:py-24 overflow-hidden bg-primary">
+<div class="absolute inset-0 opacity-20">
+<img class="w-full h-full object-cover" data-alt="Dark navy abstract geometric mesh pattern with subtle glowing orange light pulses representing logistics network connections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDahfiDKFWiYHIiUC7NdW2ojVJcJkxT75qVCj6PGzTwbBfF1E3muBOdC4l_lY825kPZq7mpYMVCRIrurTw0QjjUzvwm1k-YmSOA2ty8kt3_sHKNbmnoHResf4aVcBSiFGu0mLPwWPoxsDjLiQK3ci1EwwmbXqllc2COVptfM1PM1ASGmpwA9RG5bMl3V18AUmIILalOfVsMiJxN8xfmyGFfk9tWfKl2hSkG_UevHf4cuU1Xhd96rPaJ0OnnxvzIP40vaRY4gm0jtyMi"/>
+</div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="max-w-3xl">
+<span class="inline-block px-3 py-1 mb-6 rounded-full bg-secondary/10 text-secondary-container text-xs font-black tracking-widest uppercase font-label">Service Portfolio</span>
+<h1 class="text-5xl md:text-7xl font-extrabold font-headline text-white leading-[1.1] tracking-tighter mb-8">
+            Engineered <br/><span class="text-secondary-container">Risk Mitigation.</span>
+</h1>
+<p class="text-on-primary-container text-lg md:text-xl max-w-xl font-light leading-relaxed">
+            From heavy haul to last-mile delivery, our insurance frameworks are built for the high-velocity world of modern logistics. Precision coverage for those who keep the world moving.
+          </p>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="px-6 -mt-12 relative z-20">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Motor Truck Cargo - Featured -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-[0_20px_40px_rgba(0,14,36,0.08)] flex flex-col justify-between min-h-[400px] border-b-4 border-secondary">
+<div>
+<div class="w-16 h-16 bg-primary-container rounded-xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-secondary-container text-4xl" data-icon="inventory_2">inventory_2</span>
+</div>
+<h2 class="text-3xl md:text-4xl font-extrabold font-headline text-primary mb-6 tracking-tight">Motor Truck Cargo</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-2xl">
+                Protection for the heartbeat of your business. Our cargo policies cover loss or damage to the freight you're hauling, including specialized endorsements for reefer breakdown, debris removal, and high-value theft prevention.
+              </p>
+</div>
+<div class="mt-12 flex items-center justify-between">
+<div class="flex gap-4">
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant text-[10px] font-bold uppercase rounded-full tracking-widest">FMCSA Approved</span>
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant text-[10px] font-bold uppercase rounded-full tracking-widest">Custom Limits</span>
+</div>
+<button class="flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all group">
+                Learn More <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Primary Liability -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-8 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mb-6 shadow-sm">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="shield">shield</span>
+</div>
+<h3 class="text-2xl font-bold font-headline text-primary mb-4 tracking-tight">Primary Liability</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                Mandatory coverage required by law. Protects your operation against bodily injury and property damage caused by truck accidents. We provide the BMC-91X filings you need to stay compliant.
+              </p>
+</div>
+<button class="mt-8 text-primary font-bold text-sm underline underline-offset-4 hover:text-secondary transition-colors text-left">
+              Learn More
+            </button>
+</div>
+<!-- Physical Damage -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-8 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mb-6 shadow-sm">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="build">build</span>
+</div>
+<h3 class="text-2xl font-bold font-headline text-primary mb-4 tracking-tight">Physical Damage</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                Your truck is your most valuable asset. Our Physical Damage coverage includes Collision and Comprehensive protection against fire, theft, vandalism, and road hazards.
+              </p>
+</div>
+<button class="mt-8 text-primary font-bold text-sm underline underline-offset-4 hover:text-secondary transition-colors text-left">
+              Learn More
+            </button>
+</div>
+<!-- General Liability -->
+<div class="md:col-span-8 bg-surface-container-highest rounded-xl p-8 md:p-10 flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1">
+<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-white text-2xl" data-icon="account_balance">account_balance</span>
+</div>
+<h3 class="text-2xl font-bold font-headline text-primary mb-4 tracking-tight">General Liability</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                Covers your business for mishaps that happen off the road. From slips and falls at your terminal to delivery errors and advertising injuries. Essential for for-hire truckers and fleet owners.
+              </p>
+<button class="mt-6 bg-primary text-white px-6 py-3 rounded-lg text-sm font-bold hover:bg-primary-container transition-colors">
+                Learn More
+              </button>
+</div>
+<div class="w-full md:w-1/3 h-48 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="High-angle shot of a clean modern logistics terminal and office building with large glass windows reflecting a blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwLOmM_5H_DlAbpJKc-UpUt5_53QevngFbfC83kG8E9AqCdxnrEx1lEB1Wvpy1sKkCICSwwZo6iB5Aeb53OjtoZu1Hiq5tl6ko4tgHZZu129gbT2XWYq2RI-HEk30NaHCqojg_RKu58yv3OaCZt3QF0R1VnkjP7oJrbvvpAb2zSxOYXZw_0DwvGVgY0DiW4gLaLnXgRIkwaCrDY3N0-gNc01s82TYphME10ViaupgwGrJj2tlJkxkdCBza5unKoIeZpQ0Kh4VEuSpx"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed Feature Ticker / Data Strips -->
+<section class="py-20 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="flex items-start gap-4">
+<span class="text-secondary-container material-symbols-outlined text-3xl" data-icon="speed">speed</span>
+<div>
+<h4 class="font-headline font-bold text-primary mb-2">Fast Certificate Issuance</h4>
+<p class="text-sm text-on-surface-variant">Don't lose a load waiting for paperwork. Our 24/7 digital portal generates COIs instantly.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="text-secondary-container material-symbols-outlined text-3xl" data-icon="support_agent">support_agent</span>
+<div>
+<h4 class="font-headline font-bold text-primary mb-2">Specialist Claims Team</h4>
+<p class="text-sm text-on-surface-variant">Dedicated adjusters who understand the complexity of cargo claims and logistics law.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="text-secondary-container material-symbols-outlined text-3xl" data-icon="trending_up">trending_up</span>
+<div>
+<h4 class="font-headline font-bold text-primary mb-2">Risk Engineering</h4>
+<p class="text-sm text-on-surface-variant">Safety audits and fleet telematics integration to lower your premiums over time.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-3xl bg-slate-50 dark:bg-slate-900">
+<div class="w-full px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="text-lg font-black font-['Manrope'] text-slate-900 dark:text-white block mb-4">The Kinetic Authority</span>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-['Inter'] leading-relaxed">
+          High-performance insurance infrastructure for the trucking industry. Precision underwriting for modern fleets.
+        </p>
+</div>
+<div>
+<h5 class="font-headline font-bold text-primary dark:text-white mb-6 uppercase text-xs tracking-widest">Coverage</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-slate-900 dark:hover:text-slate-50 underline transition-all" href="#">Cargo Liability</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-slate-900 dark:hover:text-slate-50 underline transition-all" href="#">Primary Liability</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-slate-900 dark:hover:text-slate-50 underline transition-all" href="#">Fleet Safety</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-bold text-primary dark:text-white mb-6 uppercase text-xs tracking-widest">Legal</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-slate-900 dark:hover:text-slate-50 underline transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-slate-900 dark:hover:text-slate-50 underline transition-all" href="#">Terms of Service</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-slate-900 dark:hover:text-slate-50 underline transition-all" href="#">FMCSA Compliance</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-bold text-primary dark:text-white mb-6 uppercase text-xs tracking-widest">Connect</h5>
+<div class="flex gap-4 mb-4">
+<span class="material-symbols-outlined text-slate-500 hover:text-secondary cursor-pointer">phone</span>
+<span class="material-symbols-outlined text-slate-500 hover:text-secondary cursor-pointer">mail</span>
+<span class="material-symbols-outlined text-slate-500 hover:text-secondary cursor-pointer">location_on</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-8 border-t border-slate-200/50 dark:border-slate-800/50 text-center">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-['Inter']">© 2024 The Kinetic Authority. Precision Logistics Insurance.</p>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 lg:hidden bg-white/90 dark:bg-slate-950/90 backdrop-blur-lg shadow-[0_-4px_20px_rgba(0,14,36,0.08)]">
+<div class="w-full flex justify-around items-center px-4 py-3 pb-safe">
+<div class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-orange-600 dark:text-orange-500 bg-orange-50 dark:bg-orange-900/20 rounded-xl px-3 py-1">
+<span class="material-symbols-outlined" data-weight="fill">verified_user</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Services</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined">newspaper</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Blog</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Resources</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined">request_quote</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Contact</span>
+</div>
+</div>
+</nav>
+</body></html>
