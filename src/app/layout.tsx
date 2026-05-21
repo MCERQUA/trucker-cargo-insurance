@@ -5,6 +5,73 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BottomNav from "@/components/BottomNav";
+import JsonLd from "@/components/JsonLd";
+
+const SITE_URL = "https://truckercargoinsurance.com";
+
+const insuranceAgencySchema = {
+  "@context": "https://schema.org",
+  "@type": "InsuranceAgency",
+  "@id": `${SITE_URL}/#organization`,
+  name: "Trucker Cargo Insurance",
+  url: SITE_URL,
+  description:
+    "High-performance insurance infrastructure for the trucking industry. Precision underwriting for modern fleets with bindable quotes in minutes.",
+  email: "underwriting@truckercargoinsurance.com",
+  telephone: "+1-800-543-8424",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "4500 Authority Blvd, Suite 200",
+    addressLocality: "Chicago",
+    addressRegion: "IL",
+    postalCode: "60607",
+    addressCountry: "US",
+  },
+  areaServed: {
+    "@type": "Country",
+    name: "United States",
+  },
+  knowsAbout: [
+    "cargo insurance",
+    "trucker insurance",
+    "motor truck cargo",
+    "primary liability insurance",
+    "physical damage insurance",
+    "general liability insurance",
+    "fleet insurance",
+    "FMCSA compliance",
+    "reefer breakdown coverage",
+    "trailer interchange",
+  ],
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "06:00",
+      closes: "20:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Saturday",
+      opens: "08:00",
+      closes: "14:00",
+    },
+  ],
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${SITE_URL}/#website`,
+  url: SITE_URL,
+  name: "Trucker Cargo Insurance",
+  description:
+    "Trucking cargo insurance with 48-state coverage, 5-minute bindable quotes, and FMCSA-compliant filings.",
+  publisher: {
+    "@id": `${SITE_URL}/#organization`,
+  },
+  inLanguage: "en-US",
+};
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -39,6 +106,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${manrope.variable} ${inter.variable}`}>
+      <head>
+        <JsonLd data={[insuranceAgencySchema, websiteSchema]} />
+      </head>
       <body className="min-h-screen flex flex-col bg-surface font-body antialiased">
         <Header />
         <main className="flex-1 pt-20 pb-20 md:pb-32">{children}</main>

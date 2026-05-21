@@ -9,10 +9,70 @@ import {
   ArrowForward,
   CheckCircle,
 } from "@/components/Icons";
+import JsonLd from "@/components/JsonLd";
+
+const SITE_URL = "https://truckercargoinsurance.com";
+const ORG_REF = { "@id": `${SITE_URL}/#organization` };
+
+const servicesSchemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Services", item: `${SITE_URL}/services` },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Motor Truck Cargo Insurance",
+    serviceType: "Motor Truck Cargo Insurance",
+    provider: ORG_REF,
+    areaServed: { "@type": "Country", name: "United States" },
+    description:
+      "Protection for the heartbeat of your business. Cargo policies cover loss or damage to the freight you're hauling, including specialized endorsements for reefer breakdown, debris removal, and high-value theft prevention.",
+    url: `${SITE_URL}/services`,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Primary Liability Insurance",
+    serviceType: "Primary Liability Insurance",
+    provider: ORG_REF,
+    areaServed: { "@type": "Country", name: "United States" },
+    description:
+      "Mandatory coverage required by law. Protects your operation against bodily injury and property damage caused by truck accidents. Includes BMC-91X filings for FMCSA compliance.",
+    url: `${SITE_URL}/services`,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Physical Damage Insurance",
+    serviceType: "Physical Damage Insurance",
+    provider: ORG_REF,
+    areaServed: { "@type": "Country", name: "United States" },
+    description:
+      "Your truck is your most valuable asset. Physical Damage coverage includes Collision and Comprehensive protection against fire, theft, vandalism, and road hazards.",
+    url: `${SITE_URL}/services`,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "General Liability Insurance",
+    serviceType: "General Liability Insurance",
+    provider: ORG_REF,
+    areaServed: { "@type": "Country", name: "United States" },
+    description:
+      "Covers your business for mishaps that happen off the road. From slips and falls at your terminal to delivery errors and advertising injuries. Essential for for-hire truckers and fleet owners.",
+    url: `${SITE_URL}/services`,
+  },
+];
 
 export default function ServicesPage() {
   return (
     <>
+      <JsonLd data={servicesSchemas} />
       {/* Hero Section */}
       <section className="relative px-6 py-16 md:py-24 overflow-hidden bg-primary">
         <div className="absolute inset-0 opacity-20">

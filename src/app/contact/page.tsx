@@ -2,10 +2,33 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { RequestQuote, Call, LocationOn, Mail, Schedule, SupportAgent } from "@/components/Icons";
+import JsonLd from "@/components/JsonLd";
+
+const SITE_URL = "https://truckercargoinsurance.com";
+
+const contactBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+    { "@type": "ListItem", position: 2, name: "Contact", item: `${SITE_URL}/contact` },
+  ],
+};
+
+const contactPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  url: `${SITE_URL}/contact`,
+  name: "Contact Trucker Cargo Insurance",
+  description:
+    "Reach our cargo insurance specialists for quotes, claims, and policy updates. Headquarters in Chicago, IL with 24/7 claims support.",
+  mainEntity: { "@id": `${SITE_URL}/#organization` },
+};
 
 export default function ContactPage() {
   return (
     <>
+      <JsonLd data={[contactBreadcrumb, contactPageSchema]} />
       {/* Hero Section */}
       <section className="px-6 py-12 md:py-20 max-w-7xl mx-auto">
         <div className="max-w-3xl">

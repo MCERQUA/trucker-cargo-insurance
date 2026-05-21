@@ -13,6 +13,9 @@ import {
   OpenInNew,
   Link as LinkIcon,
 } from "@/components/Icons";
+import JsonLd from "@/components/JsonLd";
+
+const SITE_URL = "https://truckercargoinsurance.com";
 
 const faqs = [
   {
