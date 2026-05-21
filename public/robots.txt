@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://truckercargoinsurance.com/sitemap.xml

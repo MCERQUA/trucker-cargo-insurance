@@ -45,6 +45,28 @@ const faqs = [
   },
 ];
 
+const toolsBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+    { "@type": "ListItem", position: 2, name: "Tools", item: `${SITE_URL}/tools` },
+  ],
+};
+
+const faqPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+
 export default function ToolsPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
@@ -54,6 +76,7 @@ export default function ToolsPage() {
 
   return (
     <>
+      <JsonLd data={[toolsBreadcrumb, faqPageSchema]} />
       {/* Hero Section */}
       <header className="relative px-6 py-16 md:py-24 kinetic-gradient overflow-hidden">
         <div className="max-w-7xl mx-auto relative z-10">

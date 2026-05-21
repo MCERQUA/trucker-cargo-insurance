@@ -9,6 +9,15 @@ import {
   KeyboardArrowRight,
   ArrowForward,
 } from "@/components/Icons";
+import JsonLd from "@/components/JsonLd";
+
+const SITE_URL = "https://truckercargoinsurance.com";
+
+// Normalize human-readable dates ("May 14, 2024") into ISO-8601 for schema.org
+const toIsoDate = (humanDate: string): string => {
+  const parsed = new Date(humanDate);
+  return Number.isNaN(parsed.getTime()) ? humanDate : parsed.toISOString().slice(0, 10);
+};
 
 const articles = [
   {
@@ -87,9 +96,41 @@ const articles = [
 
 const categories = ["All Updates", "Safety", "Fleet Tech", "Market Trends", "Insurance Tips"];
 
+const insightsBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+    { "@type": "ListItem", position: 2, name: "Insights", item: `${SITE_URL}/insights` },
+  ],
+};
+
+const blogSchema = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "@id": `${SITE_URL}/insights#blog`,
+  url: `${SITE_URL}/insights`,
+  name: "Kinetic Insights & Strategy",
+  description:
+    "Logistics insurance intelligence, FMCSA regulatory alerts, and fleet safety strategies for trucking professionals.",
+  publisher: { "@id": `${SITE_URL}/#organization` },
+  blogPost: articles.map((article) => ({
+    "@type": "BlogPosting",
+    headline: article.title,
+    description: article.excerpt,
+    image: article.image,
+    datePublished: toIsoDate(article.date),
+    articleSection: article.category,
+    url: `${SITE_URL}/insights`,
+    author: { "@id": `${SITE_URL}/#organization` },
+    publisher: { "@id": `${SITE_URL}/#organization` },
+  })),
+};
+
 export default function InsightsPage() {
   return (
     <>
+      <JsonLd data={[insightsBreadcrumb, blogSchema]} />
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-6 py-12 md:py-20">
         <div className="flex flex-col md:flex-row items-end gap-6 mb-16">
