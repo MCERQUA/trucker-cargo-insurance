@@ -205,3 +205,42 @@ const nextConfig: NextConfig = {
 - Form validation
 
 **Why It Matters**: Site has strong content, clear CTAs, and good UX, but lacks SEO infrastructure (sitemap, robots, schema) that search engines use to understand authority, relevance, and business type. Adding these unlocks organic traffic potential.
+
+---
+
+## 9. Structured Data Update — 2026-05-21
+
+Filled the gaps flagged in Sections 4, 6, and 7 (items 1, 2, 3, 7, 8). All data drawn directly from the existing codebase — no fabricated addresses, ratings, or reviews.
+
+### Files Created
+- `src/components/JsonLd.tsx` — Reusable `<script type="application/ld+json">` injector component used across all pages.
+- `public/robots.txt` — Allow-all with sitemap reference.
+- `public/sitemap.xml` — All 5 routes (home, services, insights, tools, contact) with lastmod + priority.
+
+### Files Modified — Schema Types Added
+
+| File | Schema Type(s) Added |
+|---|---|
+| `src/app/layout.tsx` | `InsuranceAgency` (org with address, phone, email, areaServed=US, knowsAbout=[cargo insurance, trucker insurance, motor truck cargo, primary liability, physical damage, general liability, fleet, FMCSA compliance, reefer breakdown, trailer interchange], openingHoursSpecification) + `WebSite` |
+| `src/app/services/page.tsx` | `BreadcrumbList` + 4× `Service` (Motor Truck Cargo, Primary Liability, Physical Damage, General Liability — all `provider` → org `@id`) |
+| `src/app/contact/page.tsx` | `BreadcrumbList` + `ContactPage` (mainEntity → org `@id`) |
+| `src/app/tools/page.tsx` | `BreadcrumbList` + `FAQPage` (5 Q&A pairs derived from the existing `faqs` array — no hardcoding) |
+| `src/app/insights/page.tsx` | `BreadcrumbList` + `Blog` containing 6× `BlogPosting` (built from the existing `articles` array with ISO-normalized `datePublished`, `headline`, `description`, `image`, `articleSection`) |
+
+### Conventions
+- All cross-document refs use `@id` URIs (`https://truckercargoinsurance.com/#organization`, `…/#website`) so the InsuranceAgency node is defined once in layout and referenced everywhere else.
+- `areaServed` set to `Country: United States` per the "Now Covering 48 States" hero copy.
+- All real data: address from `/contact` page (4500 Authority Blvd, Suite 200, Chicago, IL 60607), phone from `tel:1-800-543-8424` link, email `underwriting@truckercargoinsurance.com`, opening hours from contact page's "Operations Window" card.
+
+### Validation
+- JSON-LD payloads built as JS objects → `JSON.stringify` in component → no manual JSON string escaping risk.
+- `sitemap.xml` validated as well-formed XML.
+- All 5 page files confirmed to import + render `<JsonLd>` exactly once at the top of their returned tree.
+- TS compile check skipped (no local `node_modules`); component is plain TS+JSX with explicit `JsonLdProps` typing.
+
+### Still Open (Out of Scope for This Pass)
+- Per-page `generateMetadata` for title/description overrides (item #4 in §7).
+- Open Graph + Twitter Card tags (items #5, #6).
+- Form validation messaging on `/contact` (item #10).
+- Dynamic `/insights/[slug]` routes with full-body articles (item #7 alternate).
+
