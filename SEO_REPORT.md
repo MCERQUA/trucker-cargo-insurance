@@ -244,3 +244,16 @@ Filled the gaps flagged in Sections 4, 6, and 7 (items 1, 2, 3, 7, 8). All data 
 - Form validation messaging on `/contact` (item #10).
 - Dynamic `/insights/[slug]` routes with full-body articles (item #7 alternate).
 
+## Round 3 — repaired 2026-05-22
+- **Domain: confirmed** `https://truckercargoinsurance.com` (in source + sitemap).
+- **`src/app/layout.tsx`** — extended `Metadata` export with `metadataBase`, title `template`, `alternates.canonical: "/"`, full `openGraph` (type, url, title, description, siteName, locale, 1200×630 `/og-image.jpg`), Twitter `summary_large_image`, explicit `robots: { index, follow }`.
+- **Per-page metadata** added (closing item #4 in §7):
+  - `src/app/services/page.tsx` — title "Trucking Insurance Coverage — Motor Truck Cargo, Liability, Physical Damage" + canonical `/services` + OG + Twitter.
+  - `src/app/contact/page.tsx` — title "Get a Cargo Insurance Quote — Trucker Cargo Insurance" + canonical `/contact` + OG + Twitter.
+  - `src/app/insights/page.tsx` — title "Trucking & Logistics Insurance Insights — FMCSA Compliance, Fleet Safety" + canonical `/insights` + OG + Twitter.
+  - `src/app/tools/layout.tsx` — **NEW**: created a server-component `layout.tsx` wrapper to host metadata, because `tools/page.tsx` is a client component (`"use client"`) and Next.js disallows `metadata` exports on client components. Title "Cargo Insurance FAQ & Resources" + canonical `/tools` + OG + Twitter.
+- **`src/app/not-found.tsx`** — created branded 404 (clean confirmation that no existing `_not-found.tsx` was actually present in `src/app/`, despite §6 claim; Next.js was generating the default). `robots: { index: false, follow: true }`. Two CTAs: Home + Contact.
+- **`public/sitemap.xml`** — bumped all 5 entries' `lastmod` from 2026-05-21 → 2026-05-22.
+- **Skipped:** §7 item 10 (contact form validation/messaging — UX scope, not SEO foundation). Per-article BlogPosting → individual `/insights/[slug]` routes (#7 alternate — content/architecture scope). Site already has good alt-text coverage (11/12 images per §5) so no image work needed.
+- **Validation:** all changes are TS-typed via `Metadata`. JSON-LD blocks unchanged. Sitemap re-validated well-formed. Build will regenerate `/out/` on next Netlify deploy.
+
