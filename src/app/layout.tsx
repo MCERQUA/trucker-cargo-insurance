@@ -86,7 +86,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Trucker Cargo Insurance | Trucking Cargo Insurance",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Trucker Cargo Insurance | Trucking Cargo Insurance",
+    template: "%s | Trucker Cargo Insurance",
+  },
   description:
     "High-performance insurance infrastructure for the trucking industry. Precision underwriting for modern fleets. Get bindable quotes in minutes.",
   keywords: [
@@ -97,6 +101,35 @@ export const metadata: Metadata = {
     "logistics insurance",
     "FMCSA compliance",
   ],
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    title: "Trucker Cargo Insurance | Trucking Cargo Insurance",
+    description:
+      "High-performance insurance infrastructure for the trucking industry. 48-state coverage. Bindable quotes in 5 minutes.",
+    siteName: "Trucker Cargo Insurance",
+    locale: "en_US",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Trucker Cargo Insurance — 48-state trucking and cargo coverage",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Trucker Cargo Insurance | Trucking Cargo Insurance",
+    description:
+      "48-state trucking & cargo insurance — bindable quotes in 5 minutes. Motor truck cargo, primary liability, physical damage, general liability.",
+    images: ["/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
