@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -5,6 +6,29 @@ import { RequestQuote, Call, LocationOn, Mail, Schedule, SupportAgent } from "@/
 import JsonLd from "@/components/JsonLd";
 
 const SITE_URL = "https://truckercargoinsurance.com";
+
+export const metadata: Metadata = {
+  title: "Get a Cargo Insurance Quote — Trucker Cargo Insurance",
+  description:
+    "Contact our cargo insurance specialists for quotes, claims, and policy support. Headquartered in Chicago, IL with 24/7 claims response. Call 1-800-543-8424.",
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    type: "website",
+    url: `${SITE_URL}/contact`,
+    title: "Contact Trucker Cargo Insurance — Quotes & Claims",
+    description:
+      "Reach our specialists for quotes, claims, and policy updates. Chicago HQ. 24/7 claims response.",
+    siteName: "Trucker Cargo Insurance",
+    locale: "en_US",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Trucker Cargo Insurance — Contact our team" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Trucker Cargo Insurance — Quotes & Claims",
+    description: "Quotes, claims, policy support. 24/7 response. Call 1-800-543-8424.",
+    images: ["/og-image.jpg"],
+  },
+};
 
 const contactBreadcrumb = {
   "@context": "https://schema.org",

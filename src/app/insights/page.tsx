@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -12,6 +13,29 @@ import {
 import JsonLd from "@/components/JsonLd";
 
 const SITE_URL = "https://truckercargoinsurance.com";
+
+export const metadata: Metadata = {
+  title: "Trucking & Logistics Insurance Insights — FMCSA Compliance, Fleet Safety",
+  description:
+    "Strategic analysis for trucking and logistics insurance — FMCSA compliance, fleet safety, cargo risk, and regulatory updates. From the Trucker Cargo Insurance underwriting team.",
+  alternates: { canonical: "/insights" },
+  openGraph: {
+    type: "website",
+    url: `${SITE_URL}/insights`,
+    title: "Trucking & Logistics Insurance Insights",
+    description:
+      "FMCSA compliance, fleet safety, cargo risk, and regulatory analysis for trucking and logistics professionals.",
+    siteName: "Trucker Cargo Insurance",
+    locale: "en_US",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Trucker Cargo Insurance — Insights" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Trucking & Logistics Insurance Insights",
+    description: "FMCSA compliance, fleet safety, cargo risk, and regulatory analysis.",
+    images: ["/og-image.jpg"],
+  },
+};
 
 // Normalize human-readable dates ("May 14, 2024") into ISO-8601 for schema.org
 const toIsoDate = (humanDate: string): string => {
