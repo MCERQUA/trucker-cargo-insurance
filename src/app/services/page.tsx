@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -13,6 +14,29 @@ import JsonLd from "@/components/JsonLd";
 
 const SITE_URL = "https://truckercargoinsurance.com";
 const ORG_REF = { "@id": `${SITE_URL}/#organization` };
+
+export const metadata: Metadata = {
+  title: "Trucking Insurance Coverage — Motor Truck Cargo, Liability, Physical Damage",
+  description:
+    "Coverage built for the road: Motor Truck Cargo, Primary Liability, Physical Damage, and General Liability for owner-operators and fleets. 48-state coverage.",
+  alternates: { canonical: "/services" },
+  openGraph: {
+    type: "website",
+    url: `${SITE_URL}/services`,
+    title: "Trucking Insurance Coverage — Motor Truck Cargo, Liability, Physical Damage",
+    description:
+      "Four coverage lines purpose-built for trucking: Motor Truck Cargo, Primary Liability, Physical Damage, and General Liability.",
+    siteName: "Trucker Cargo Insurance",
+    locale: "en_US",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Trucker Cargo Insurance — Coverage options" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Trucking Insurance Coverage — Motor Truck Cargo, Liability, Physical Damage",
+    description: "Four coverage lines for trucking: Motor Truck Cargo, Primary Liability, Physical Damage, General Liability.",
+    images: ["/og-image.jpg"],
+  },
+};
 
 const servicesSchemas = [
   {
