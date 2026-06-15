@@ -17,14 +17,14 @@ const insuranceAgencySchema = {
   url: SITE_URL,
   description:
     "High-performance insurance infrastructure for the trucking industry. Precision underwriting for modern fleets with bindable quotes in minutes.",
-  email: "underwriting@truckercargoinsurance.com",
-  telephone: "+1-800-543-8424",
+  email: "josh@contractorschoiceagency.com",
+  telephone: "+1-844-967-5247",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "4500 Authority Blvd, Suite 200",
-    addressLocality: "Chicago",
-    addressRegion: "IL",
-    postalCode: "60607",
+    streetAddress: "12220 E Riggs Rd, Suite 200",
+    addressLocality: "Chandler",
+    addressRegion: "AZ",
+    postalCode: "85249",
     addressCountry: "US",
   },
   areaServed: {

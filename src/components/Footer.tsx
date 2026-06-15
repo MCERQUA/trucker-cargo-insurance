@@ -103,7 +103,7 @@ export default function Footer() {
           </h5>
           <div className="flex gap-4 mb-4">
             <a
-              href="tel:1-800-543-8424"
+              href="tel:1-844-967-5247"
               className="text-slate-500 hover:text-secondary transition-colors"
               aria-label="Phone"
             >
@@ -125,9 +125,9 @@ export default function Footer() {
             </a>
           </div>
           <p className="text-slate-500 dark:text-slate-400 text-sm">
-            4500 Authority Blvd, Suite 200
+            12220 E Riggs Rd, Suite 200
             <br />
-            Chicago, IL 60607
+            Chandler, AZ 85249
           </p>
         </div>
       </div>
