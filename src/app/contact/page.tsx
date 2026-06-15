@@ -10,14 +10,14 @@ const SITE_URL = "https://truckercargoinsurance.com";
 export const metadata: Metadata = {
   title: "Get a Cargo Insurance Quote — Trucker Cargo Insurance",
   description:
-    "Contact our cargo insurance specialists for quotes, claims, and policy support. Headquartered in Chicago, IL with 24/7 claims response. Call 1-800-543-8424.",
+    "Contact our cargo insurance specialists for quotes, claims, and policy support. Headquartered in Chandler, AZ with 24/7 claims response. Call 844-967-5247.",
   alternates: { canonical: "/contact" },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/contact`,
     title: "Contact Trucker Cargo Insurance — Quotes & Claims",
     description:
-      "Reach our specialists for quotes, claims, and policy updates. Chicago HQ. 24/7 claims response.",
+      "Reach our specialists for quotes, claims, and policy updates. Chandler, AZ HQ. 24/7 claims response.",
     siteName: "Trucker Cargo Insurance",
     locale: "en_US",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Trucker Cargo Insurance — Contact our team" }],
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Contact Trucker Cargo Insurance — Quotes & Claims",
-    description: "Quotes, claims, policy support. 24/7 response. Call 1-800-543-8424.",
+    description: "Quotes, claims, policy support. 24/7 response. Call 844-967-5247.",
     images: ["/og-image.jpg"],
   },
 };
@@ -45,7 +45,7 @@ const contactPageSchema = {
   url: `${SITE_URL}/contact`,
   name: "Contact Trucker Cargo Insurance",
   description:
-    "Reach our cargo insurance specialists for quotes, claims, and policy updates. Headquarters in Chicago, IL with 24/7 claims support.",
+    "Reach our cargo insurance specialists for quotes, claims, and policy updates. Headquarters in Chandler, AZ with 24/7 claims support.",
   mainEntity: { "@id": `${SITE_URL}/#organization` },
 };
 
@@ -161,11 +161,11 @@ export default function ContactPage() {
                   Immediate assistance for policy updates, claims, and emergency filings.
                 </p>
                 <a
-                  href="tel:1-800-543-8424"
+                  href="tel:1-844-967-5247"
                   className="inline-flex items-center gap-4 text-secondary-container font-black text-2xl font-headline tracking-tighter hover:text-white transition-colors"
                 >
                   <Call className="text-xl" />
-                  1-800-KINETIC
+                  844-967-5247
                 </a>
               </div>
             </div>
@@ -210,8 +210,8 @@ export default function ContactPage() {
             <div className="mb-8">
               <h2 className="font-headline font-bold text-3xl mb-4">The Command Center</h2>
               <p className="text-on-surface-variant leading-relaxed">
-                Based in the heart of the logistics corridor, our HQ coordinates coverage for over
-                15,000 active long-haul units.
+                Based in Chandler, AZ, our HQ coordinates coverage for owner-operators and fleets
+                across 48 states.
               </p>
             </div>
             <div className="space-y-6">
@@ -224,9 +224,9 @@ export default function ContactPage() {
                     Headquarters
                   </h4>
                   <p className="text-on-surface-variant text-sm">
-                    4500 Authority Blvd, Suite 200
+                    12220 E Riggs Rd, Suite 200
                     <br />
-                    Chicago, IL 60607
+                    Chandler, AZ 85249
                   </p>
                 </div>
               </div>
@@ -237,7 +237,7 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-bold text-sm uppercase tracking-wider text-primary">Email</h4>
                   <p className="text-on-surface-variant text-sm">
-                    underwriting@truckercargoinsurance.com
+                    josh@contractorschoiceagency.com
                   </p>
                 </div>
               </div>
@@ -246,7 +246,7 @@ export default function ContactPage() {
           <div className="md:col-span-8 h-[400px] bg-surface-container-low rounded-3xl overflow-hidden relative group">
             <Image
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoZdMZOI5KWb4OH-KalaFq6U1_GzHRVXTm1R4QcvSed74Yq16cx2jNg342myEfSLQT3hnwCI5TqINB8ov1glEmoNCoRGQdmtfwYvFjhe4aYIAHmymzZk14y_XCDckshfxdIcNmzP-jGPnxTozNR9tq9R_R1LYHtxc855yABnCmZI4Vf8_f3I4AqRU4S9a7020ohzv7UOkDz-LYgHVO_SuBv61Xb0NQ2oFz9uwT1ZfT43BpPZad_QNiIPbkYug_xRHaEEfSHfFl2_qm"
-              alt="Modern architectural map of Chicago logistics district"
+              alt="Map showing Chandler, AZ headquarters location"
               fill
               className="object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-700"
             />
