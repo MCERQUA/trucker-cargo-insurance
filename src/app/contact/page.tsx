@@ -77,9 +77,14 @@ export default function ContactPage() {
             </h2>
             <form
               className="space-y-6"
-              action="#"
+              name="quote-request"
               method="POST"
+              action="/success"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
             >
+              <input type="hidden" name="form-name" value="quote-request" />
+              <input type="hidden" name="bot-field" />
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="relative">
@@ -224,7 +229,7 @@ export default function ContactPage() {
                     Headquarters
                   </h4>
                   <p className="text-on-surface-variant text-sm">
-                    12220 E Riggs Rd, Suite 200
+                    12220 E Riggs Road, Suite #105
                     <br />
                     Chandler, AZ 85249
                   </p>

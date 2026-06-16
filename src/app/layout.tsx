@@ -18,14 +18,20 @@ const insuranceAgencySchema = {
   description:
     "High-performance insurance infrastructure for the trucking industry. Precision underwriting for modern fleets with bindable quotes in minutes.",
   email: "josh@contractorschoiceagency.com",
-  telephone: "+1-844-967-5247",
+  telephone: "+18449675247",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "12220 E Riggs Rd, Suite 200",
+    streetAddress: "12220 E Riggs Road, Suite #105",
     addressLocality: "Chandler",
     addressRegion: "AZ",
     postalCode: "85249",
     addressCountry: "US",
+  },
+  employee: {
+    "@type": "Person",
+    name: "Josh Cotner",
+    jobTitle: "Founder & Commercial Insurance Specialist",
+    url: "https://joshcotner.com",
   },
   areaServed: {
     "@type": "Country",

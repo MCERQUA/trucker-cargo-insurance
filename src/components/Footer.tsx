@@ -125,7 +125,7 @@ export default function Footer() {
             </a>
           </div>
           <p className="text-slate-500 dark:text-slate-400 text-sm">
-            12220 E Riggs Rd, Suite 200
+            12220 E Riggs Road, Suite #105
             <br />
             Chandler, AZ 85249
           </p>

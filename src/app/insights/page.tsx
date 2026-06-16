@@ -355,6 +355,7 @@ export default function InsightsPage() {
                   className="flex-1 bg-tertiary-container border-none rounded-xl text-white px-6 py-4 placeholder:text-slate-500 focus:ring-2 focus:ring-secondary"
                   placeholder="Fleet Manager Email"
                   type="email"
+                  name="email"
                   required
                 />
                 <button
