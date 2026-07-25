@@ -92,10 +92,11 @@ export default function ToolsPage() {
         </div>
         <div className="absolute right-0 top-0 w-1/3 h-full opacity-20 hidden lg:block">
           <Image
-            src="/images/logistics-warehouse-interior.png"
+            src="/images/logistics-warehouse-interior.webp"
             alt="Modern logistics warehouse interior"
             fill
             className="object-cover"
+            priority
           />
         </div>
       </header>
@@ -272,10 +273,10 @@ export default function ToolsPage() {
             <div className="flex justify-center md:justify-end">
               <div className="w-full max-w-sm rounded-xl shadow-2xl rotate-3 group-hover:rotate-0 transition-transform overflow-hidden">
                 <Image
-                  src="/images/semi-truck-highway-dusk.png"
+                  src="/images/semi-truck-highway-dusk.webp"
                   alt="A clean white semi-truck driving on a scenic highway at dusk"
-                  width={400}
-                  height={250}
+                  width={800}
+                  height={500}
                   className="w-full h-auto"
                 />
               </div>

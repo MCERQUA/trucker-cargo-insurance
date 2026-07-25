@@ -101,10 +101,11 @@ export default function ServicesPage() {
       <section className="relative px-6 py-16 md:py-24 overflow-hidden bg-primary">
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="/images/geometric-mesh-pattern.png"
+            src="/images/geometric-mesh-pattern.webp"
             alt="Dark navy abstract geometric mesh pattern"
             fill
             className="object-cover"
+            priority
           />
         </div>
         <div className="max-w-7xl mx-auto relative z-10">
@@ -231,10 +232,10 @@ export default function ServicesPage() {
               </div>
               <div className="w-full md:w-1/3 h-48 rounded-lg overflow-hidden shrink-0">
                 <Image
-                  src="/images/logistics-terminal.png"
+                  src="/images/logistics-terminal.webp"
                   alt="Modern logistics terminal"
-                  width={300}
-                  height={192}
+                  width={600}
+                  height={384}
                   className="w-full h-full object-cover"
                 />
               </div>

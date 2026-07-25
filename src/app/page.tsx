@@ -30,7 +30,7 @@ export default function Home() {
       <section className="relative kinetic-gradient min-h-[751px] flex items-center overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none">
           <Image
-            src="/images/hero-truck-sunset.png"
+            src="/images/hero-truck-sunset.webp"
             alt="Modern semi-truck driving on highway during sunset"
             fill
             className="object-cover grayscale"
@@ -71,24 +71,24 @@ export default function Home() {
             <div className="flex items-center gap-6 pt-4">
               <div className="flex -space-x-3">
                 <Image
-                  src="/images/customer-avatar-1.png"
+                  src="/images/customer-avatar-1.webp"
                   alt="Customer"
-                  width={40}
-                  height={40}
+                  width={80}
+                  height={80}
                   className="w-10 h-10 rounded-full border-2 border-primary object-cover"
                 />
                 <Image
-                  src="/images/customer-avatar-2.png"
+                  src="/images/customer-avatar-2.webp"
                   alt="Customer"
-                  width={40}
-                  height={40}
+                  width={80}
+                  height={80}
                   className="w-10 h-10 rounded-full border-2 border-primary object-cover"
                 />
                 <Image
-                  src="/images/customer-avatar-3.png"
+                  src="/images/customer-avatar-3.webp"
                   alt="Customer"
-                  width={40}
-                  height={40}
+                  width={80}
+                  height={80}
                   className="w-10 h-10 rounded-full border-2 border-primary object-cover"
                 />
               </div>
@@ -271,7 +271,7 @@ export default function Home() {
             {/* Main Story */}
             <article className="md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden group">
               <Image
-                src="/images/logistics-center-night.png"
+                src="/images/logistics-center-night.webp"
                 alt="Modern logistics center at night"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"

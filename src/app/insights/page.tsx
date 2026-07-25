@@ -52,7 +52,7 @@ const articles = [
     excerpt:
       "Learn how a documented pre-trip ritual can serve as your first line of defense during liability investigations.",
     image:
-      "/images/insight-pre-trip-inspection.png",
+      "/images/insight-pre-trip-inspection.webp",
     alt: "A professional truck driver performing a pre-trip safety inspection",
     readTime: "8 MIN READ",
   },
@@ -64,7 +64,7 @@ const articles = [
     excerpt:
       "Analyzing the correlation between international port congestion and domestic insurance premiums.",
     image:
-      "/images/insight-shipping-port-dusk.png",
+      "/images/insight-shipping-port-dusk.webp",
     alt: "Busy commercial shipping port at dusk",
     readTime: "10 MIN READ",
   },
@@ -76,7 +76,7 @@ const articles = [
     excerpt:
       "Cyber-criminals are targeting logistics dispatch. Here's how to secure your operational data.",
     image:
-      "/images/insight-digital-network.png",
+      "/images/insight-digital-network.webp",
     alt: "Abstract digital network visualization",
     readTime: "12 MIN READ",
   },
@@ -88,7 +88,7 @@ const articles = [
     excerpt:
       "Prevent catastrophic loss of perishable cargo with precise endorsement structuring.",
     image:
-      "/images/insight-highway-bridge-night.png",
+      "/images/insight-highway-bridge-night.webp",
     alt: "Time-lapse of car lights on a highway bridge at night",
     readTime: "6 MIN READ",
   },
@@ -100,7 +100,7 @@ const articles = [
     excerpt:
       "How sharing your safety data with underwriters can slash your annual cargo premiums.",
     image:
-      "/images/insight-truck-dashboard.png",
+      "/images/insight-truck-dashboard.webp",
     alt: "Modern digital truck dashboard",
     readTime: "9 MIN READ",
   },
@@ -112,7 +112,7 @@ const articles = [
     excerpt:
       "Incorrect inspection data can haunt your insurance rates. Learn how to fight back and win.",
     image:
-      "/images/insight-law-enforcement-vehicle.png",
+      "/images/insight-law-enforcement-vehicle.webp",
     alt: "Modern law enforcement vehicle on highway",
     readTime: "11 MIN READ",
   },

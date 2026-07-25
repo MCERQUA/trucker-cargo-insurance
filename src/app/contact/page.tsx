@@ -176,7 +176,7 @@ export default function ContactPage() {
           </div>
           <div className="md:col-span-8 h-[400px] bg-surface-container-low rounded-3xl overflow-hidden relative group">
             <Image
-              src="/images/chandler-az-map.png"
+              src="/images/chandler-az-map.webp"
               alt="Map showing Chandler, AZ headquarters location"
               fill
               className="object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-700"
