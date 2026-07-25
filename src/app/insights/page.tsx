@@ -181,11 +181,12 @@ export default function InsightsPage() {
           <article className="md:col-span-8 group relative overflow-hidden bg-surface-container-low rounded-3xl transition-transform duration-300 hover:-translate-y-2">
             <div className="aspect-[16/9] overflow-hidden">
               <Image
-                src="/images/insight-truck-desert-highway.png"
+                src="/images/insight-truck-desert-highway.webp"
                 alt="Powerful modern semi-truck driving on highway through desert"
-                width={800}
-                height={450}
+                width={960}
+                height={540}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                priority
               />
             </div>
             <div className="p-8 md:p-12 bg-surface-container-low">
@@ -279,8 +280,8 @@ export default function InsightsPage() {
                 <Image
                   src={article.image}
                   alt={article.alt}
-                  width={400}
-                  height={225}
+                  width={800}
+                  height={450}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
