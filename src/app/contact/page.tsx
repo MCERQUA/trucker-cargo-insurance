@@ -176,7 +176,7 @@ export default function ContactPage() {
           </div>
           <div className="md:col-span-8 h-[400px] bg-surface-container-low rounded-3xl overflow-hidden relative group">
             <Image
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoZdMZOI5KWb4OH-KalaFq6U1_GzHRVXTm1R4QcvSed74Yq16cx2jNg342myEfSLQT3hnwCI5TqINB8ov1glEmoNCoRGQdmtfwYvFjhe4aYIAHmymzZk14y_XCDckshfxdIcNmzP-jGPnxTozNR9tq9R_R1LYHtxc855yABnCmZI4Vf8_f3I4AqRU4S9a7020ohzv7UOkDz-LYgHVO_SuBv61Xb0NQ2oFz9uwT1ZfT43BpPZad_QNiIPbkYug_xRHaEEfSHfFl2_qm"
+              src="/images/chandler-az-map.png"
               alt="Map showing Chandler, AZ headquarters location"
               fill
               className="object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-700"

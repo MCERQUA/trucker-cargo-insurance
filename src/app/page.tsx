@@ -30,7 +30,7 @@ export default function Home() {
       <section className="relative kinetic-gradient min-h-[751px] flex items-center overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none">
           <Image
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBARKTtmsQMvOYE1N_wMdzpJs5ZJfw7UFQKIOJOLQSTIXRVXChkMOIRYwDEA7LQQ2yeiI1YxtKmHLeJY1JAhGsIBk6c6W2OYNh-3gfHsqfdL6xejkqkeVQl7SRNJmF-MalEltUpI7DzXakx1xWiO7AVx6jZC2pUJ3AfcPfgntZjQ4_4RjLJkjgbfp50vvC_91Y7Sboj7mSz_w3plwiiRexSDbB3nuRQDeLrWAnf12zRx4oZRbF8-ivDi0eTxUWZb9afhgwRlji0HAFu"
+            src="/images/hero-truck-sunset.png"
             alt="Modern semi-truck driving on highway during sunset"
             fill
             className="object-cover grayscale"
@@ -71,21 +71,21 @@ export default function Home() {
             <div className="flex items-center gap-6 pt-4">
               <div className="flex -space-x-3">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0OAgexBEQxrWgYufrxgXSFywLrWQaPmiWtJXljmsTcvqYUOIg-hf3UoNmvsJzUri2DXIVx35T8jnMpkY4QCZzDSDviI-VWs0J01tFr8OjvVyv2JuNSD8pzYRknIHpD-58cVvTQFlrrgTUDy5YT13FWJIrgU_6gAOXWQC-L7zLhu34rPfnd_ppbY-yVdserbX_IbyDLwSt8G1fDpQj1_z3zJSiliXrwkELd8s_Wwgjbdt_DaRaQxW29R641LhgccZCok78DDjPHXA3"
+                  src="/images/customer-avatar-1.png"
                   alt="Customer"
                   width={40}
                   height={40}
                   className="w-10 h-10 rounded-full border-2 border-primary object-cover"
                 />
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4sq7NoyCNOZ6Z5bgxrhFSbABmOQD_pgAFYUdV0M1v7Go6wWTOvZ4SZAmG1IZQR7tOGGUMZyD6KQnD9dYxbOjQ5WlXXHIPVPJEahG4eMZJOU3C8yzmWmYvkmBU6MWGy5t_Gj1V515mTX-O-wJlBMujU_KWYNfylGkAnZunBLBla8MByJcmBMmMfKk2eg83SE_8tqWgK7CqmSW4vlXSTLSaBxePiKGmAMW961wbZa5oAuNuI-0Z7ZfBpEeRsVkiPV_94PBvNP1yEVti"
+                  src="/images/customer-avatar-2.png"
                   alt="Customer"
                   width={40}
                   height={40}
                   className="w-10 h-10 rounded-full border-2 border-primary object-cover"
                 />
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY8JWbrjzsXHTJ0yopb60D0-OGGPdwM2c8Y0A4BetjlZz_nY9k4MzQ6-UXziE79h-xBguzmu3M7eW0lbfdOUppl_EC8aCm8PX4obR2peS7YjqDLpJpLuFECQGXgjZISYAI8qn_FeZhzvh-gduh0yNfdSeAZT4Qi2hRKWhooKh4TwQbvn4CVt4fqpqdCyB6dEP1sXLyu_7yJRwcbyw4bWSuPBX9FytTCAkAp_3Bx_d9kv5XpaNRCU4difJupNQdftFQYLpijOiVLAmc"
+                  src="/images/customer-avatar-3.png"
                   alt="Customer"
                   width={40}
                   height={40}
@@ -271,7 +271,7 @@ export default function Home() {
             {/* Main Story */}
             <article className="md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden group">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA28-SqOMmFBZdniZkv6M6BbW95kOuM4XH_PDLNYPWy1SoNljvCfbqR9Orlouvp3dJhriSoVn1OoiAfk5ys3K4OTPC-hOvQm6zHcKy4nJT98CkN6iiUDdREKP4GV-11iHPg7xbhH3DD6V-4KzyuuK8--OVzHM9wqMxQANS0O4Nfya1V2KDzrMBTYKNzeRhAcY-9y2g5FpKbD9HZQgX42I0BRDERnBRXO0Yyd3lAGEtovFLh7OzEunPqi2aEz1d6BSxousL4DyDR9ADD"
+                src="/images/logistics-center-night.png"
                 alt="Modern logistics center at night"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"

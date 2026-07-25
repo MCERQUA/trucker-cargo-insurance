@@ -52,7 +52,7 @@ const articles = [
     excerpt:
       "Learn how a documented pre-trip ritual can serve as your first line of defense during liability investigations.",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuD9ZSv2At3b57vVyZJic92SmjGB4m2KaL1XMt-9lwXmcVLgcp6szn5qsXPMulLCRWmid9lnXazpE_RAoYFTKQow9LOlZwEaTi7RZRJiJF1xTA8CjHID8XVphMstXcKc-oQFZgwCZT1y2fxbXx6nGH2c9nc1FlpsQzFoiZ6XfSqP67Gi9D9-t7qQwhWBiFlL6XnHskuNjhyyNdtEplNvfQ406mP1qNuRTUF9hBYaoPaok2vJJ7pbmSqbq5tR59gB2edtFsWu_j4M8brU",
+      "/images/insight-pre-trip-inspection.png",
     alt: "A professional truck driver performing a pre-trip safety inspection",
     readTime: "8 MIN READ",
   },
@@ -64,7 +64,7 @@ const articles = [
     excerpt:
       "Analyzing the correlation between international port congestion and domestic insurance premiums.",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDxBEJfXWdc2XoIlg-resQFsYxMJ15ZtwtWorH6TpO_n5Cf4WvtXa3k8zZRgglfaJvFPvWNoG0ingyrmR4oj0UXN-xqzrfDAinoaCPSpMwChtaWdyRger1t9thFsORPClpfYAr9vqIbEYlKvvnElxE5lEb9DqMOaTs01pbAbSG54ej3pjjkuIZEHqynZ_k50TQe-WNlpxVV12IianET3zb6qJXswDFTmNth65hsiFXA64EtJsrFegTlI46l2V_WIYBYakcnVcBOiQ0x",
+      "/images/insight-shipping-port-dusk.png",
     alt: "Busy commercial shipping port at dusk",
     readTime: "10 MIN READ",
   },
@@ -76,7 +76,7 @@ const articles = [
     excerpt:
       "Cyber-criminals are targeting logistics dispatch. Here's how to secure your operational data.",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAJf0TKEN5Lrf3qz742YyHXyNAanCQvBwseCaEUZGohK0rEnl-4SPQMlMpaai9XI7ga_BINQ1iG_BzzyjpQgmhly4ZtjfFmHJZ9cS1pZMXsyRl4AuRB7sgrAl0DeBZfOTbnj81AX-HN8peS_k704L6IuEknbbX70Btvvq7nnKjEvG4oJBLYhGkfKNEX_UrekqL_IeQQEtDol-9lgy6ThSF14eonKyHBR7h0bn1xa3DYAcctlxjPZFdz5VWTO9EJl1c5Fz5SXq_NSMRE",
+      "/images/insight-digital-network.png",
     alt: "Abstract digital network visualization",
     readTime: "12 MIN READ",
   },
@@ -88,7 +88,7 @@ const articles = [
     excerpt:
       "Prevent catastrophic loss of perishable cargo with precise endorsement structuring.",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBb1GG12umPaoQaQjNOYvPkqVBkLoz4w-aoyScZeUOTJ4eSdum1KYlL2MA8jptVEnua18A0Q1wAtNfD48xxQRZUU_54VJfc1ks_VN7H5vYKM_R7BJeNvCaqA1dqt0XRmiRIEmYNW9jfWPHr5pskKs4ezyP_c1zWnYcwy7099sY3HKsoz7v76yQIo8pkXGe8Z9WUsThn4LFg2QBzFC2_atMgRdrewWZiD1pBHaMNtlCcclw9lmH6WrlBAlPMdb5elJvxCcblTJJP4oLM",
+      "/images/insight-highway-bridge-night.png",
     alt: "Time-lapse of car lights on a highway bridge at night",
     readTime: "6 MIN READ",
   },
@@ -100,7 +100,7 @@ const articles = [
     excerpt:
       "How sharing your safety data with underwriters can slash your annual cargo premiums.",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAK64OjioVT2bRuA1AoMwMOjVp825znZX6jPXD7Cq0EZSnqcf1JMOxcEM-siKfTnZb91W1OHlI4ylj-QAAdNg5wGUvGBqTyVCmgDBZrHHnFv3Tt266YIhsR6y9VoyH_LjsHHv_0ESvypk_YIT0ZwsQactcx6P7DxD6ayveirveWgGPk0XnIlbOxSDt49yWxD3_wdy98U9K9_R0KKPUV6w8kVvlZHfRr3Mg28FDFCUM4P7wvE9flbIWhcM4nzJYYkSCXD9cINAiNF9HR",
+      "/images/insight-truck-dashboard.png",
     alt: "Modern digital truck dashboard",
     readTime: "9 MIN READ",
   },
@@ -112,7 +112,7 @@ const articles = [
     excerpt:
       "Incorrect inspection data can haunt your insurance rates. Learn how to fight back and win.",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuADNE75d2zXEp1q8zcTTr1tgX0uqd6fxa8pDevNrmVJ2BC5GNKkaELM85Qrdh3M7jiXrryi1ogQJpyDHoCi-e9xjWRqUzXe99KcSZjn3squqQBxNxmP3OioMnqcmSJtXaS1tzEbsaZx1tZptOAUtKWK0MebAi8S4b2V7Mo8V1FxnRO0dhg8wKS1duZFHNy5-dje4s2TsrObUB2Fn_SrNw2T4p9MYzgB90cJrRnXGVZGwiyg7heK1i_Dco5V27sjnC-SLPkVi8XObuVH",
+      "/images/insight-law-enforcement-vehicle.png",
     alt: "Modern law enforcement vehicle on highway",
     readTime: "11 MIN READ",
   },
@@ -181,7 +181,7 @@ export default function InsightsPage() {
           <article className="md:col-span-8 group relative overflow-hidden bg-surface-container-low rounded-3xl transition-transform duration-300 hover:-translate-y-2">
             <div className="aspect-[16/9] overflow-hidden">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8nx2Ety1SmWnTN4m7TzWvZj_To5xgqtso3RxsxG1VmcgAdqm_FchTL9DmjsHpSCh9L9r5qGLpsr16FnRMDWVSIomurS274gdVkO-EycK7kkelex3I4OHxYepPcDqhgdwvXaLSo27YC5SBUxMZIH_TQCN7we5fuh87jr6yEFhaLt5w6yfS1k_SjdQUhSxcBtkjjpQ6pbpvNKf0WO_3AZ-1g7FRTjmy7m1GhLJo7OqIqeMDsDuFOY-wPnWr0pqYFxCBMunkUKrXeitI"
+                src="/images/insight-truck-desert-highway.png"
                 alt="Powerful modern semi-truck driving on highway through desert"
                 width={800}
                 height={450}

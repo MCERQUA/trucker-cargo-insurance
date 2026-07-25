@@ -92,7 +92,7 @@ export default function ToolsPage() {
         </div>
         <div className="absolute right-0 top-0 w-1/3 h-full opacity-20 hidden lg:block">
           <Image
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM8B3OeHXKyH8AtIXDwgL4ug_4svpyq4EB2JiwrqRAz5ttNqvL765unQeilq7QGv3H2Iw2eDEhiU89w2fnJ5tSgjus6QSogeZSoJzt7FR1_oD6n_8fMUjQBFvpUYMAao4y0eVCpUqyKE4RKtUYdJDLg2bngn6xM5gblnHhQPdX52lSkYPn3VBJ_-_a0hHQnyt7fAlOR554AmNBI_EB5_uVEwD2PF3r6lqEix1w6SCGDiBFcLK6_bhDgL_sqKS7Ao0THMvYoMJqD1qq"
+            src="/images/logistics-warehouse-interior.png"
             alt="Modern logistics warehouse interior"
             fill
             className="object-cover"
@@ -272,7 +272,7 @@ export default function ToolsPage() {
             <div className="flex justify-center md:justify-end">
               <div className="w-full max-w-sm rounded-xl shadow-2xl rotate-3 group-hover:rotate-0 transition-transform overflow-hidden">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQW3Km47wi_RFVCh7F9pRkyOoUiowV3Vs6bUGDtAryCF10X6BZ5_tszQgGgzslxq_F1z55PEHybDTpEVwbqmnP_u9raizAlLusvCtLp5s3yp_NQs2i8ysZm3o_loFB8T6MXWiteqpULzvtQFsFQh2Stl0om79rKEBm64eU69ZJr3wRHso-p1EOUsXSsS1IUDLbKZ1QXwAq1l3nvNgAxKyJtKRik7_UCVgTmDjgISHO_Pop7uVD0iMLZYedPgCovpIK3-VhUl6HSQrU"
+                  src="/images/semi-truck-highway-dusk.png"
                   alt="A clean white semi-truck driving on a scenic highway at dusk"
                   width={400}
                   height={250}

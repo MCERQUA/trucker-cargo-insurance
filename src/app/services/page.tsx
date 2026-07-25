@@ -101,7 +101,7 @@ export default function ServicesPage() {
       <section className="relative px-6 py-16 md:py-24 overflow-hidden bg-primary">
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDahfiDKFWiYHIiUC7NdW2ojVJcJkxT75qVCj6PGzTwbBfF1E3muBOdC4l_lY825kPZq7mpYMVCRIrurTw0QjjUzvwm1k-YmSOA2ty8kt3_sHKNbmnoHResf4aVcBSiFGu0mLPwWPoxsDjLiQK3ci1EwwmbXqllc2COVptfM1PM1ASGmpwA9RG5bMl3V18AUmIILalOfVsMiJxN8xfmyGFfk9tWfKl2hSkG_UevHf4cuU1Xhd96rPaJ0OnnxvzIP40vaRY4gm0jtyMi"
+            src="/images/geometric-mesh-pattern.png"
             alt="Dark navy abstract geometric mesh pattern"
             fill
             className="object-cover"
@@ -231,7 +231,7 @@ export default function ServicesPage() {
               </div>
               <div className="w-full md:w-1/3 h-48 rounded-lg overflow-hidden shrink-0">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwLOmM_5H_DlAbpJKc-UpUt5_53QevngFbfC83kG8E9AqCdxnrEx1lEB1Wvpy1sKkCICSwwZo6iB5Aeb53OjtoZu1Hiq5tl6ko4tgHZZu129gbT2XWYq2RI-HEk30NaHCqojg_RKu58yv3OaCZt3QF0R1VnkjP7oJrbvvpAb2zSxOYXZw_0DwvGVgY0DiW4gLaLnXgRIkwaCrDY3N0-gNc01s82TYphME10ViaupgwGrJj2tlJkxkdCBza5unKoIeZpQ0Kh4VEuSpx"
+                  src="/images/logistics-terminal.png"
                   alt="Modern logistics terminal"
                   width={300}
                   height={192}
