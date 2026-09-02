@@ -59,9 +59,12 @@ export default function Header() {
         </nav>
 
         {/* CTA Button */}
-        <button className="hidden md:block bg-secondary hover:bg-secondary-container text-white px-6 py-2.5 rounded-xl font-bold text-sm tracking-tight scale-95 active:scale-90 transition-all shadow-md hover:shadow-lg">
+        <Link
+          href="/contact"
+          className="hidden md:block bg-secondary hover:bg-secondary-container text-white px-6 py-2.5 rounded-xl font-bold text-sm tracking-tight scale-95 active:scale-90 transition-all shadow-md hover:shadow-lg"
+        >
           GET A QUOTE
-        </button>
+        </Link>
 
         {/* Mobile Menu Icon */}
         <button
@@ -95,9 +98,13 @@ export default function Header() {
                 </Link>
               );
             })}
-            <button className="mt-4 bg-secondary hover:bg-secondary-container text-white px-6 py-3 rounded-xl font-bold text-sm tracking-tight">
+            <Link
+              href="/contact"
+              onClick={() => setMobileMenuOpen(false)}
+              className="mt-4 bg-secondary hover:bg-secondary-container text-white px-6 py-3 rounded-xl font-bold text-sm tracking-tight"
+            >
               GET A QUOTE
-            </button>
+            </Link>
           </nav>
         </div>
       )}
