@@ -95,6 +95,153 @@ export default function QuoteForm() {
         </div>
       </div>
 
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="relative">
+          <label className="block text-[10px] uppercase tracking-widest font-bold text-outline mb-1">
+            Phone
+          </label>
+          <input
+            className="w-full bg-surface-container-high border-b border-outline focus:border-secondary transition-colors outline-none px-0 py-3 text-primary font-medium focus:ring-0"
+            placeholder="(555) 000-0000"
+            type="tel"
+            name="phone"
+            required
+          />
+        </div>
+        <div className="relative">
+          <label className="block text-[10px] uppercase tracking-widest font-bold text-outline mb-1">
+            Street Address
+          </label>
+          <input
+            className="w-full bg-surface-container-high border-b border-outline focus:border-secondary transition-colors outline-none px-0 py-3 text-primary font-medium focus:ring-0"
+            placeholder="123 Main St"
+            type="text"
+            name="streetAddress"
+            required
+          />
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="relative">
+          <label className="block text-[10px] uppercase tracking-widest font-bold text-outline mb-1">
+            City
+          </label>
+          <input
+            className="w-full bg-surface-container-high border-b border-outline focus:border-secondary transition-colors outline-none px-0 py-3 text-primary font-medium focus:ring-0"
+            placeholder="City"
+            type="text"
+            name="city"
+            required
+          />
+        </div>
+        <div className="relative">
+          <label className="block text-[10px] uppercase tracking-widest font-bold text-outline mb-1">
+            State
+          </label>
+          <input
+            className="w-full bg-surface-container-high border-b border-outline focus:border-secondary transition-colors outline-none px-0 py-3 text-primary font-medium focus:ring-0"
+            placeholder="TX"
+            type="text"
+            name="state"
+            required
+          />
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="relative">
+          <label className="block text-[10px] uppercase tracking-widest font-bold text-outline mb-1">
+            ZIP Code
+          </label>
+          <input
+            className="w-full bg-surface-container-high border-b border-outline focus:border-secondary transition-colors outline-none px-0 py-3 text-primary font-medium focus:ring-0"
+            placeholder="00000"
+            type="text"
+            name="zip"
+            required
+          />
+        </div>
+        <div className="relative">
+          <label className="block text-[10px] uppercase tracking-widest font-bold text-outline mb-1">
+            FEIN (Federal Tax ID)
+          </label>
+          <input
+            className="w-full bg-surface-container-high border-b border-outline focus:border-secondary transition-colors outline-none px-0 py-3 text-primary font-medium focus:ring-0"
+            placeholder="00-0000000"
+            type="text"
+            name="fein"
+            required
+          />
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="relative">
+          <label className="block text-[10px] uppercase tracking-widest font-bold text-outline mb-1">
+            Year Business Started
+          </label>
+          <input
+            className="w-full bg-surface-container-high border-b border-outline focus:border-secondary transition-colors outline-none px-0 py-3 text-primary font-medium focus:ring-0"
+            placeholder="2015"
+            type="number"
+            name="yearBusinessStarted"
+            required
+          />
+        </div>
+        <div className="relative">
+          <label className="block text-[10px] uppercase tracking-widest font-bold text-outline mb-1">
+            Current or Prior Carrier
+          </label>
+          <input
+            className="w-full bg-surface-container-high border-b border-outline focus:border-secondary transition-colors outline-none px-0 py-3 text-primary font-medium focus:ring-0"
+            placeholder="Carrier name"
+            type="text"
+            name="priorCarrierName"
+            required
+          />
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="relative">
+          <label className="block text-[10px] uppercase tracking-widest font-bold text-outline mb-1">
+            Current or Prior Policy Number
+          </label>
+          <input
+            className="w-full bg-surface-container-high border-b border-outline focus:border-secondary transition-colors outline-none px-0 py-3 text-primary font-medium focus:ring-0"
+            placeholder="Policy number"
+            type="text"
+            name="priorPolicyNumber"
+            required
+          />
+        </div>
+        <div className="relative">
+          <label className="block text-[10px] uppercase tracking-widest font-bold text-outline mb-1">
+            Policy Expiration Date
+          </label>
+          <input
+            className="w-full bg-surface-container-high border-b border-outline focus:border-secondary transition-colors outline-none px-0 py-3 text-primary font-medium focus:ring-0"
+            type="date"
+            name="priorPolicyExpiration"
+            required
+          />
+        </div>
+      </div>
+
+      <div className="relative">
+        <label className="block text-[10px] uppercase tracking-widest font-bold text-outline mb-1">
+          Description of Your Business
+        </label>
+        <textarea
+          className="w-full bg-surface-container-high border-b border-outline focus:border-secondary transition-colors outline-none px-0 py-3 text-primary font-medium focus:ring-0"
+          placeholder="What you haul, lanes, day-to-day operations"
+          name="businessDescription"
+          rows={3}
+          required
+        />
+      </div>
+
       <div className="pt-4">
         <button
           type="submit"
