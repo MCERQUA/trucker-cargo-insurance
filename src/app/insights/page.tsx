@@ -350,8 +350,13 @@ export default function InsightsPage() {
               </p>
             </div>
             <div>
-              <form className="flex flex-col sm:flex-row gap-4" data-netlify="true" name="newsletter">
+              <form className="flex flex-col sm:flex-row gap-4" data-netlify="true" name="newsletter" netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="newsletter" />
+                <p className="hidden">
+                  <label>
+                    Don&apos;t fill this out: <input type="text" name="bot-field" />
+                  </label>
+                </p>
                 <input
                   className="flex-1 bg-tertiary-container border-none rounded-xl text-white px-6 py-4 placeholder:text-slate-500 focus:ring-2 focus:ring-secondary"
                   placeholder="Fleet Manager Email"
