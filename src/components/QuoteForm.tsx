@@ -3,28 +3,40 @@
 import React from "react";
 import { RequestQuote } from "@/components/Icons";
 
-const WEBHOOK_URL = `https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=truckercargoinsurance.com`;
+/**
+ * Posts through Netlify Forms, not to the leads webhook directly.
+ *
+ * This form used to fetch the webhook URL itself and then redirect to /success whether or not
+ * that call succeeded — so Netlify never saw a submission (quote-request read 0 since June) and
+ * a failed post still told the visitor they were done. Now the submission goes to Netlify, which
+ * stores it AND forwards it to the leads DB via the submission_created notification in
+ * netlify.toml. One capture, two places it can be recovered from, and a real error state.
+ */
 
 export default function QuoteForm() {
+  const [status, setStatus] = React.useState<"idle" | "sending" | "error">("idle");
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
-    const formData = Object.fromEntries(fd.entries());
-    // Honeypot: if the bot-field is filled, silently drop.
-    if (formData["bot-field"]) {
+    // Honeypot: a filled bot-field is a bot. Drop it without posting and without an error.
+    if (fd.get("bot-field")) {
       window.location.href = "/success";
       return;
     }
+    setStatus("sending");
     try {
-      await fetch(WEBHOOK_URL, {
+      const res = await fetch("/", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ form_name: "quote", source: "truckercargoinsurance.com", ...formData }),
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(fd as unknown as Record<string, string>).toString(),
       });
+      if (!res.ok) throw new Error(String(res.status));
+      window.location.href = "/success";
     } catch {
-      // Never block the existing success UX if the post fails.
+      // Never fake a success: if it did not send, say so and give them the phone number.
+      setStatus("error");
     }
-    window.location.href = "/success";
   };
 
   return (
@@ -49,7 +61,7 @@ export default function QuoteForm() {
             className="w-full bg-surface-container-high border-b border-outline focus:border-secondary transition-colors outline-none px-0 py-3 text-primary font-medium focus:ring-0"
             placeholder="John Doe"
             type="text"
-            name="fullName"
+            name="name"
             required
           />
         </div>
@@ -242,12 +254,28 @@ export default function QuoteForm() {
         />
       </div>
 
+      {status === "error" && (
+        <div className="rounded-lg border border-amber-400 bg-amber-50 px-4 py-3 text-sm text-amber-900">
+          That did not send. Please call{" "}
+          <a href="tel:+18449675247" className="font-bold underline">
+            844-967-5247
+          </a>{" "}
+          and we will take the details over the phone.
+        </div>
+      )}
+
+      <p className="text-[11px] leading-relaxed text-outline">
+        By submitting this form you agree to be contacted by Contractors Choice Agency about your
+        insurance request. Your information is used to prepare your quote and is never sold.
+      </p>
+
       <div className="pt-4">
         <button
           type="submit"
+          disabled={status === "sending"}
           className="w-full kinetic-gradient text-white py-5 rounded-lg font-bold text-sm tracking-widest uppercase hover:opacity-90 transition-all flex items-center justify-center gap-3 shadow-lg"
         >
-          BIND COVERAGE NOW
+          {status === "sending" ? "SENDING…" : "BIND COVERAGE NOW"}
           <RequestQuote />
         </button>
       </div>

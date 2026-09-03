@@ -205,7 +205,7 @@ export default function AboutPage() {
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/quote"
+              href="/contact"
               className="safety-gradient text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all"
             >
               Get a Free Quote
