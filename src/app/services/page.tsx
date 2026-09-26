@@ -131,7 +131,7 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
             {/* Motor Truck Cargo - Featured */}
-            <div className="md:col-span-8 bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-[0_20px_40px_rgba(0,14,36,0.08)] flex flex-col justify-between min-h-[400px] border-b-4 border-secondary">
+            <div className="md:col-span-8 bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-[0_20px_40px_rgba(28,20,16,0.08)] flex flex-col justify-between min-h-[400px] border-b-4 border-secondary">
               <div>
                 <div className="w-16 h-16 bg-primary-container rounded-xl flex items-center justify-center mb-8">
                   <Inventory className="text-secondary-container text-4xl" />

@@ -1,11 +1,13 @@
 @import "tailwindcss";
+/* The Stitch design mockups in /screens are not part of the site; do not generate CSS for their classes. */
+@source not "../../screens";
 
 :root {
   /* Primary Colors */
-  --primary: #000e24;
-  --primary-container: #00234b;
+  --primary: #1C1410;
+  --primary-container: #3A2418;
   --on-primary: #ffffff;
-  --on-primary-container: #718bb9;
+  --on-primary-container: #D9B48A;
 
   /* Secondary Colors */
   --secondary: #a04100;
@@ -14,29 +16,29 @@
   --on-secondary-container: #572000;
 
   /* Tertiary Colors */
-  --tertiary: #000e24;
-  --tertiary-container: #00234b;
+  --tertiary: #1C1410;
+  --tertiary-container: #3A2418;
   --on-tertiary: #ffffff;
-  --on-tertiary-container: #4a8be7;
-  --tertiary-fixed: #d6e3ff;
-  --on-tertiary-fixed: #001b3d;
+  --on-tertiary-container: #E8A23C;
+  --tertiary-fixed: #F6E3C8;
+  --on-tertiary-fixed: #2E1609;
 
   /* Surface Colors */
-  --surface: #f8f9fa;
-  --surface-container: #edeeef;
-  --surface-container-low: #f3f4f5;
+  --surface: #FBF9F6;
+  --surface-container: #F0EDEA;
+  --surface-container-low: #F5F3F0;
   --surface-container-lowest: #ffffff;
-  --surface-container-high: #e7e8e9;
-  --surface-container-highest: #e1e3e4;
-  --on-surface: #191c1d;
-  --on-surface-variant: #43474e;
+  --surface-container-high: #EAE6E2;
+  --surface-container-highest: #E4DFDA;
+  --on-surface: #1C1814;
+  --on-surface-variant: #48423C;
 
   /* Outline */
-  --outline: #74777f;
-  --outline-variant: #c4c6d0;
+  --outline: #77706A;
+  --outline-variant: #CFC7BE;
 
   /* Gradients */
-  --kinetic-gradient: linear-gradient(135deg, #000e24 0%, #00234b 100%);
+  --kinetic-gradient: linear-gradient(135deg, #1C1410 0%, #3A2418 100%);
   --safety-gradient: linear-gradient(90deg, #a04100 0%, #fe6b00 100%);
 
   /* Border Radius */
@@ -106,7 +108,7 @@
   }
 
   .kinetic-gradient {
-    background: linear-gradient(135deg, #000e24 0%, #00234b 100%);
+    background: linear-gradient(135deg, #1C1410 0%, #3A2418 100%);
   }
 
   .safety-gradient {

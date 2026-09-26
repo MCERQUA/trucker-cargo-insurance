@@ -22,7 +22,7 @@ export default function BottomNav() {
   };
 
   return (
-    <nav className="fixed bottom-0 left-0 w-full z-50 lg:hidden bg-white/90 dark:bg-slate-950/90 backdrop-blur-lg shadow-[0_-4px_20px_rgba(0,14,36,0.08)]">
+    <nav className="fixed bottom-0 left-0 w-full z-50 lg:hidden bg-white/90 dark:bg-stone-950/90 backdrop-blur-lg shadow-[0_-4px_20px_rgba(28,20,16,0.08)]">
       <div className="flex justify-around items-center px-4 py-3 pb-safe">
         {navItems.map((item) => {
           const Icon = item.icon;
@@ -35,7 +35,7 @@ export default function BottomNav() {
               className={`flex flex-col items-center justify-center tap-highlight-transparent duration-200 ${
                 active
                   ? "text-orange-600 dark:text-orange-500 bg-orange-50 dark:bg-orange-900/20 rounded-xl px-3 py-1"
-                  : "text-slate-500 dark:text-slate-400"
+                  : "text-stone-500 dark:text-stone-400"
               }`}
             >
               <Icon className="text-xl" />

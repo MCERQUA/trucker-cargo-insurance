@@ -36,7 +36,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <LocalShipping className="text-primary text-2xl" />
-          <span className="text-xl font-extrabold tracking-tighter text-slate-900 font-headline">
+          <span className="text-xl font-extrabold tracking-tighter text-stone-900 font-headline">
             Trucker Cargo Insurance
           </span>
         </Link>
@@ -50,7 +50,7 @@ export default function Header() {
               className={`font-medium transition-colors ${
                 isActive(link.href)
                   ? "text-orange-600 font-bold border-b-2 border-orange-600"
-                  : "text-slate-600 hover:text-orange-600"
+                  : "text-stone-600 hover:text-orange-600"
               }`}
             >
               {link.label}
@@ -78,7 +78,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-t border-slate-200">
+        <div className="md:hidden bg-white border-t border-stone-200">
           <nav className="flex flex-col px-6 py-4">
             {navLinks.map((link) => {
               const Icon = link.icon;
@@ -89,7 +89,7 @@ export default function Header() {
                   className={`flex items-center gap-3 py-3 font-medium transition-colors ${
                     isActive(link.href)
                       ? "text-orange-600 font-bold"
-                      : "text-slate-600 hover:text-orange-600"
+                      : "text-stone-600 hover:text-orange-600"
                   }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >

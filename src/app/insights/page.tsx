@@ -252,7 +252,7 @@ export default function InsightsPage() {
                 className={`px-6 py-2 font-bold rounded-xl text-sm transition-colors ${
                   index === 0
                     ? "bg-primary text-white"
-                    : "bg-white text-primary hover:bg-slate-100"
+                    : "bg-white text-primary hover:bg-stone-100"
                 }`}
               >
                 {category}
@@ -358,7 +358,7 @@ export default function InsightsPage() {
                   </label>
                 </p>
                 <input
-                  className="flex-1 bg-tertiary-container border-none rounded-xl text-white px-6 py-4 placeholder:text-slate-500 focus:ring-2 focus:ring-secondary"
+                  className="flex-1 bg-tertiary-container border-none rounded-xl text-white px-6 py-4 placeholder:text-stone-500 focus:ring-2 focus:ring-secondary"
                   placeholder="Fleet Manager Email"
                   type="email"
                   name="email"
@@ -371,7 +371,7 @@ export default function InsightsPage() {
                   JOIN NOW
                 </button>
               </form>
-              <p className="text-[10px] text-slate-500 mt-4 uppercase tracking-widest">
+              <p className="text-[10px] text-stone-500 mt-4 uppercase tracking-widest">
                 No spam. Only high-performance logistics insights.
               </p>
             </div>

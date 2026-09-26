@@ -71,7 +71,7 @@ export default function ContactPage() {
       <section className="px-6 max-w-7xl mx-auto mb-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* Quote Request Form Card */}
-          <div className="lg:col-span-7 bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-[0_20px_40px_rgba(0,14,36,0.04)]">
+          <div className="lg:col-span-7 bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-[0_20px_40px_rgba(28,20,16,0.04)]">
             <h2 className="font-headline font-bold text-2xl mb-8 flex items-center gap-3">
               <RequestQuote className="text-secondary text-2xl" />
               Instant Quote Request
