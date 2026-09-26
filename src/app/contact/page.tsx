@@ -155,7 +155,7 @@ export default function ContactPage() {
                     Headquarters
                   </h4>
                   <p className="text-on-surface-variant text-sm">
-                    12220 E Riggs Road, Suite #105
+                    12220 E Riggs Road, Suite #104
                     <br />
                     Chandler, AZ 85249
                   </p>

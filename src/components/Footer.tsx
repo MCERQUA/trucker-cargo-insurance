@@ -110,7 +110,7 @@ export default function Footer() {
               <Phone className="text-xl" />
             </a>
             <a
-              href="mailto:underwriting@truckercargoinsurance.com"
+              href="mailto:josh@contractorschoiceagency.com"
               className="text-stone-500 hover:text-secondary transition-colors"
               aria-label="Email"
             >
@@ -125,7 +125,7 @@ export default function Footer() {
             </a>
           </div>
           <p className="text-stone-500 dark:text-stone-400 text-sm">
-            12220 E Riggs Road, Suite #105
+            12220 E Riggs Road, Suite #104
             <br />
             Chandler, AZ 85249
           </p>
