@@ -135,7 +135,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto px-8 py-8 border-t border-stone-200/50 dark:border-stone-800/50 text-center">
         <p className="text-stone-500 dark:text-stone-400 text-sm">
-          © {currentYear} Trucker Cargo Insurance. Precision Logistics Insurance.
+          © {currentYear} Trucker Cargo Insurance · A Contractors Choice Agency Brand · NPN #8608479 · Licensed in all 50 states. Precision Logistics Insurance.
         </p>
       </div>
     </footer>
