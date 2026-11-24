@@ -4,21 +4,279 @@
 <body>
   <!-- Netlify form detection stub -->
   <form name="quote-request" netlify netlify-honeypot="bot-field" hidden>
-    <input type="text" name="name" />
-    <input type="text" name="dotNumber" />
-    <input type="email" name="email" />
-    <select name="fleetSize">
-      <option>1-5 Vehicles</option>
-      <option>6-20 Vehicles</option>
-      <option>21-50 Vehicles</option>
-      <option>50+ Vehicles</option>
-    </select>
     <input type="hidden" name="bot-field" />
-    <input type="tel" name="phone" />
-    <input type="text" name="streetAddress" />
+    <input type="text" name="name" />
+    <input type="text" name="businessName" />
+    <input type="text" name="_info_dba" />
+    <select name="_info_entityType"><option>Sole proprietor</option><option>Partnership</option><option>LLC</option><option>Corporation</option><option>S-Corporation</option><option>Other</option></select>
+    <input type="text" name="_info_fein" />
+    <input type="text" name="address" />
     <input type="text" name="city" />
     <input type="text" name="state" />
     <input type="text" name="zip" />
+    <input type="tel" name="phone" />
+    <input type="email" name="email" />
+    <input type="text" name="_info_yearsInBusiness" />
+    <input type="text" name="_info_usdotNumber" />
+    <input type="text" name="_info_mcNumber" />
+    <input type="text" name="_info_operatingStates" />
+    <select name="_info_operatingRadius"><option>Local (under 50 miles)</option><option>Intermediate (50-200 miles)</option><option>Long haul (200+ miles)</option><option>Mixed</option></select>
+    <textarea name="_info_commoditiesHauled"></textarea>
+    <textarea name="_info_commodityPercentages"></textarea>
+    <textarea name="_info_shippersBrokers"></textarea>
+    <select name="_info_hazmat"><option>Yes</option><option>No</option></select>
+    <select name="_info_autoLiabilityLimit"><option>$750,000</option><option>$1,000,000</option><option>Other / not sure</option></select>
+    <select name="_info_physicalDamage"><option>Yes</option><option>No</option></select>
+    <select name="_info_cargoLimit"><option>$50,000</option><option>$100,000</option><option>$250,000</option><option>Other / not sure</option></select>
+    <select name="_info_cargoDeductible"><option>$1,000</option><option>$2,500</option><option>$5,000</option><option>Other / not sure</option></select>
+    <select name="_info_trailerInterchange"><option>Yes</option><option>No</option></select>
+    <select name="_info_generalLiability"><option>Yes</option><option>No</option></select>
+    <textarea name="_info_otherCoverage"></textarea>
+    <input type="text" name="_info_currentCarrier" />
+    <input type="date" name="_info_currentExpiration" />
+    <input type="text" name="_info_currentLimits" />
+    <input type="text" name="_info_currentPremium" />
+    <textarea name="_info_lossHistory5yr"></textarea>
+    <textarea name="_info_safetyProgram"></textarea>
+    <input type="date" name="_info_effectiveDate" />
+    <textarea name="_info_notes"></textarea>
+    <input type="text" name="_info_vehicleCount" />
+    <input type="text" name="_info_vehicle1_year" />
+    <input type="text" name="_info_vehicle1_make" />
+    <input type="text" name="_info_vehicle1_model" />
+    <input type="text" name="_info_vehicle1_vin" />
+    <input type="text" name="_info_vehicle1_gvw" />
+    <input type="text" name="_info_vehicle1_statedValue" />
+    <input type="text" name="_info_vehicle1_garagingZip" />
+    <select name="_info_vehicle1_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_vehicle1_lienholder" />
+    <input type="text" name="_info_vehicle2_year" />
+    <input type="text" name="_info_vehicle2_make" />
+    <input type="text" name="_info_vehicle2_model" />
+    <input type="text" name="_info_vehicle2_vin" />
+    <input type="text" name="_info_vehicle2_gvw" />
+    <input type="text" name="_info_vehicle2_statedValue" />
+    <input type="text" name="_info_vehicle2_garagingZip" />
+    <select name="_info_vehicle2_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_vehicle2_lienholder" />
+    <input type="text" name="_info_vehicle3_year" />
+    <input type="text" name="_info_vehicle3_make" />
+    <input type="text" name="_info_vehicle3_model" />
+    <input type="text" name="_info_vehicle3_vin" />
+    <input type="text" name="_info_vehicle3_gvw" />
+    <input type="text" name="_info_vehicle3_statedValue" />
+    <input type="text" name="_info_vehicle3_garagingZip" />
+    <select name="_info_vehicle3_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_vehicle3_lienholder" />
+    <input type="text" name="_info_vehicle4_year" />
+    <input type="text" name="_info_vehicle4_make" />
+    <input type="text" name="_info_vehicle4_model" />
+    <input type="text" name="_info_vehicle4_vin" />
+    <input type="text" name="_info_vehicle4_gvw" />
+    <input type="text" name="_info_vehicle4_statedValue" />
+    <input type="text" name="_info_vehicle4_garagingZip" />
+    <select name="_info_vehicle4_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_vehicle4_lienholder" />
+    <input type="text" name="_info_vehicle5_year" />
+    <input type="text" name="_info_vehicle5_make" />
+    <input type="text" name="_info_vehicle5_model" />
+    <input type="text" name="_info_vehicle5_vin" />
+    <input type="text" name="_info_vehicle5_gvw" />
+    <input type="text" name="_info_vehicle5_statedValue" />
+    <input type="text" name="_info_vehicle5_garagingZip" />
+    <select name="_info_vehicle5_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_vehicle5_lienholder" />
+    <input type="text" name="_info_vehicle6_year" />
+    <input type="text" name="_info_vehicle6_make" />
+    <input type="text" name="_info_vehicle6_model" />
+    <input type="text" name="_info_vehicle6_vin" />
+    <input type="text" name="_info_vehicle6_gvw" />
+    <input type="text" name="_info_vehicle6_statedValue" />
+    <input type="text" name="_info_vehicle6_garagingZip" />
+    <select name="_info_vehicle6_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_vehicle6_lienholder" />
+    <input type="text" name="_info_vehicle7_year" />
+    <input type="text" name="_info_vehicle7_make" />
+    <input type="text" name="_info_vehicle7_model" />
+    <input type="text" name="_info_vehicle7_vin" />
+    <input type="text" name="_info_vehicle7_gvw" />
+    <input type="text" name="_info_vehicle7_statedValue" />
+    <input type="text" name="_info_vehicle7_garagingZip" />
+    <select name="_info_vehicle7_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_vehicle7_lienholder" />
+    <input type="text" name="_info_vehicle8_year" />
+    <input type="text" name="_info_vehicle8_make" />
+    <input type="text" name="_info_vehicle8_model" />
+    <input type="text" name="_info_vehicle8_vin" />
+    <input type="text" name="_info_vehicle8_gvw" />
+    <input type="text" name="_info_vehicle8_statedValue" />
+    <input type="text" name="_info_vehicle8_garagingZip" />
+    <select name="_info_vehicle8_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_vehicle8_lienholder" />
+    <input type="text" name="_info_vehicle9_year" />
+    <input type="text" name="_info_vehicle9_make" />
+    <input type="text" name="_info_vehicle9_model" />
+    <input type="text" name="_info_vehicle9_vin" />
+    <input type="text" name="_info_vehicle9_gvw" />
+    <input type="text" name="_info_vehicle9_statedValue" />
+    <input type="text" name="_info_vehicle9_garagingZip" />
+    <select name="_info_vehicle9_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_vehicle9_lienholder" />
+    <input type="text" name="_info_vehicle10_year" />
+    <input type="text" name="_info_vehicle10_make" />
+    <input type="text" name="_info_vehicle10_model" />
+    <input type="text" name="_info_vehicle10_vin" />
+    <input type="text" name="_info_vehicle10_gvw" />
+    <input type="text" name="_info_vehicle10_statedValue" />
+    <input type="text" name="_info_vehicle10_garagingZip" />
+    <select name="_info_vehicle10_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_vehicle10_lienholder" />
+    <input type="text" name="_info_trailerCount" />
+    <input type="text" name="_info_trailer1_year" />
+    <input type="text" name="_info_trailer1_make" />
+    <input type="text" name="_info_trailer1_type" />
+    <input type="text" name="_info_trailer1_vin" />
+    <input type="text" name="_info_trailer1_statedValue" />
+    <select name="_info_trailer1_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_trailer1_lienholder" />
+    <input type="text" name="_info_trailer2_year" />
+    <input type="text" name="_info_trailer2_make" />
+    <input type="text" name="_info_trailer2_type" />
+    <input type="text" name="_info_trailer2_vin" />
+    <input type="text" name="_info_trailer2_statedValue" />
+    <select name="_info_trailer2_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_trailer2_lienholder" />
+    <input type="text" name="_info_trailer3_year" />
+    <input type="text" name="_info_trailer3_make" />
+    <input type="text" name="_info_trailer3_type" />
+    <input type="text" name="_info_trailer3_vin" />
+    <input type="text" name="_info_trailer3_statedValue" />
+    <select name="_info_trailer3_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_trailer3_lienholder" />
+    <input type="text" name="_info_trailer4_year" />
+    <input type="text" name="_info_trailer4_make" />
+    <input type="text" name="_info_trailer4_type" />
+    <input type="text" name="_info_trailer4_vin" />
+    <input type="text" name="_info_trailer4_statedValue" />
+    <select name="_info_trailer4_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_trailer4_lienholder" />
+    <input type="text" name="_info_trailer5_year" />
+    <input type="text" name="_info_trailer5_make" />
+    <input type="text" name="_info_trailer5_type" />
+    <input type="text" name="_info_trailer5_vin" />
+    <input type="text" name="_info_trailer5_statedValue" />
+    <select name="_info_trailer5_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_trailer5_lienholder" />
+    <input type="text" name="_info_trailer6_year" />
+    <input type="text" name="_info_trailer6_make" />
+    <input type="text" name="_info_trailer6_type" />
+    <input type="text" name="_info_trailer6_vin" />
+    <input type="text" name="_info_trailer6_statedValue" />
+    <select name="_info_trailer6_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_trailer6_lienholder" />
+    <input type="text" name="_info_trailer7_year" />
+    <input type="text" name="_info_trailer7_make" />
+    <input type="text" name="_info_trailer7_type" />
+    <input type="text" name="_info_trailer7_vin" />
+    <input type="text" name="_info_trailer7_statedValue" />
+    <select name="_info_trailer7_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_trailer7_lienholder" />
+    <input type="text" name="_info_trailer8_year" />
+    <input type="text" name="_info_trailer8_make" />
+    <input type="text" name="_info_trailer8_type" />
+    <input type="text" name="_info_trailer8_vin" />
+    <input type="text" name="_info_trailer8_statedValue" />
+    <select name="_info_trailer8_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_trailer8_lienholder" />
+    <input type="text" name="_info_trailer9_year" />
+    <input type="text" name="_info_trailer9_make" />
+    <input type="text" name="_info_trailer9_type" />
+    <input type="text" name="_info_trailer9_vin" />
+    <input type="text" name="_info_trailer9_statedValue" />
+    <select name="_info_trailer9_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_trailer9_lienholder" />
+    <input type="text" name="_info_trailer10_year" />
+    <input type="text" name="_info_trailer10_make" />
+    <input type="text" name="_info_trailer10_type" />
+    <input type="text" name="_info_trailer10_vin" />
+    <input type="text" name="_info_trailer10_statedValue" />
+    <select name="_info_trailer10_ownership"><option>Owned</option><option>Leased</option><option>Financed</option></select>
+    <input type="text" name="_info_trailer10_lienholder" />
+    <input type="text" name="_info_driverCount" />
+    <input type="text" name="_info_driver1_name" />
+    <input type="date" name="_info_driver1_dob" />
+    <input type="text" name="_info_driver1_licenseNumber" />
+    <input type="text" name="_info_driver1_licenseState" />
+    <input type="text" name="_info_driver1_yearsCdl" />
+    <textarea name="_info_driver1_violations"></textarea>
+    <textarea name="_info_driver1_accidents"></textarea>
+    <input type="text" name="_info_driver2_name" />
+    <input type="date" name="_info_driver2_dob" />
+    <input type="text" name="_info_driver2_licenseNumber" />
+    <input type="text" name="_info_driver2_licenseState" />
+    <input type="text" name="_info_driver2_yearsCdl" />
+    <textarea name="_info_driver2_violations"></textarea>
+    <textarea name="_info_driver2_accidents"></textarea>
+    <input type="text" name="_info_driver3_name" />
+    <input type="date" name="_info_driver3_dob" />
+    <input type="text" name="_info_driver3_licenseNumber" />
+    <input type="text" name="_info_driver3_licenseState" />
+    <input type="text" name="_info_driver3_yearsCdl" />
+    <textarea name="_info_driver3_violations"></textarea>
+    <textarea name="_info_driver3_accidents"></textarea>
+    <input type="text" name="_info_driver4_name" />
+    <input type="date" name="_info_driver4_dob" />
+    <input type="text" name="_info_driver4_licenseNumber" />
+    <input type="text" name="_info_driver4_licenseState" />
+    <input type="text" name="_info_driver4_yearsCdl" />
+    <textarea name="_info_driver4_violations"></textarea>
+    <textarea name="_info_driver4_accidents"></textarea>
+    <input type="text" name="_info_driver5_name" />
+    <input type="date" name="_info_driver5_dob" />
+    <input type="text" name="_info_driver5_licenseNumber" />
+    <input type="text" name="_info_driver5_licenseState" />
+    <input type="text" name="_info_driver5_yearsCdl" />
+    <textarea name="_info_driver5_violations"></textarea>
+    <textarea name="_info_driver5_accidents"></textarea>
+    <input type="text" name="_info_driver6_name" />
+    <input type="date" name="_info_driver6_dob" />
+    <input type="text" name="_info_driver6_licenseNumber" />
+    <input type="text" name="_info_driver6_licenseState" />
+    <input type="text" name="_info_driver6_yearsCdl" />
+    <textarea name="_info_driver6_violations"></textarea>
+    <textarea name="_info_driver6_accidents"></textarea>
+    <input type="text" name="_info_driver7_name" />
+    <input type="date" name="_info_driver7_dob" />
+    <input type="text" name="_info_driver7_licenseNumber" />
+    <input type="text" name="_info_driver7_licenseState" />
+    <input type="text" name="_info_driver7_yearsCdl" />
+    <textarea name="_info_driver7_violations"></textarea>
+    <textarea name="_info_driver7_accidents"></textarea>
+    <input type="text" name="_info_driver8_name" />
+    <input type="date" name="_info_driver8_dob" />
+    <input type="text" name="_info_driver8_licenseNumber" />
+    <input type="text" name="_info_driver8_licenseState" />
+    <input type="text" name="_info_driver8_yearsCdl" />
+    <textarea name="_info_driver8_violations"></textarea>
+    <textarea name="_info_driver8_accidents"></textarea>
+    <input type="text" name="_info_driver9_name" />
+    <input type="date" name="_info_driver9_dob" />
+    <input type="text" name="_info_driver9_licenseNumber" />
+    <input type="text" name="_info_driver9_licenseState" />
+    <input type="text" name="_info_driver9_yearsCdl" />
+    <textarea name="_info_driver9_violations"></textarea>
+    <textarea name="_info_driver9_accidents"></textarea>
+    <input type="text" name="_info_driver10_name" />
+    <input type="date" name="_info_driver10_dob" />
+    <input type="text" name="_info_driver10_licenseNumber" />
+    <input type="text" name="_info_driver10_licenseState" />
+    <input type="text" name="_info_driver10_yearsCdl" />
+    <textarea name="_info_driver10_violations"></textarea>
+    <textarea name="_info_driver10_accidents"></textarea>
+    <!-- legacy /contact form fields (kept; that form posts the same form name) -->
+    <input type="text" name="dotNumber" />
+    <select name="fleetSize"><option>1-5 Vehicles</option><option>6-20 Vehicles</option><option>21-50 Vehicles</option><option>50+ Vehicles</option></select>
+    <input type="text" name="streetAddress" />
     <input type="text" name="fein" />
     <input type="text" name="yearBusinessStarted" />
     <input type="text" name="priorCarrierName" />

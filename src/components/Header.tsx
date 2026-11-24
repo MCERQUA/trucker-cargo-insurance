@@ -63,7 +63,7 @@ export default function Header() {
 
         {/* CTA Button */}
         <Link
-          href="/contact"
+          href="/quote"
           className="hidden md:block bg-secondary hover:bg-secondary-container text-white px-6 py-2.5 rounded-xl font-bold text-sm tracking-tight scale-95 active:scale-90 transition-all shadow-md hover:shadow-lg"
         >
           GET A QUOTE
@@ -102,7 +102,7 @@ export default function Header() {
               );
             })}
             <Link
-              href="/contact"
+              href="/quote"
               onClick={() => setMobileMenuOpen(false)}
               className="mt-4 bg-secondary hover:bg-secondary-container text-white px-6 py-3 rounded-xl font-bold text-sm tracking-tight"
             >

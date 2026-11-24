@@ -71,7 +71,7 @@ export default function Footer() {
           <ul className="space-y-4">
             <li>
               <Link
-                href="/contact"
+                href="/privacy"
                 className="text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-50 underline transition-all"
               >
                 Privacy Policy

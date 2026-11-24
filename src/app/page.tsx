@@ -56,7 +56,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/contact"
+                href="/quote"
                 className="safety-gradient text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-orange-950/20 hover:scale-105 active:scale-95 transition-all text-center"
               >
                 Get a Free Quote
@@ -339,7 +339,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             <Link
-              href="/contact"
+              href="/quote"
               className="safety-gradient text-white px-10 py-5 rounded-xl font-extrabold text-xl shadow-2xl shadow-orange-950/20 hover:scale-105 active:scale-95 transition-all"
             >
               GET YOUR QUOTE NOW
