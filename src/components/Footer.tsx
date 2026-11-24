@@ -92,6 +92,13 @@ export default function Footer() {
               >
                 FMCSA Compliance
               </Link>
+            </li>            <li>
+              <Link
+                href="/faq"
+                className="text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-50 underline transition-all"
+              >
+                FAQ
+              </Link>
             </li>
           </ul>
         </div>

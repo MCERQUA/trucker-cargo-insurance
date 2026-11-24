@@ -13,11 +13,12 @@ import {
   RequestQuote,
 } from "./Icons";
 
-const navLinks = [
+const navLinks: { href: string; label: string; icon: React.ComponentType<{ className?: string }> | null; lgOnly?: boolean }[] = [
   { href: "/", label: "Home", icon: null },
   { href: "/services", label: "Services", icon: VerifiedUser },
   { href: "/insights", label: "Blog", icon: Newspaper },
   { href: "/tools", label: "Resources", icon: MenuBook },
+  { href: "/faq", label: "FAQ", icon: null, lgOnly: true },
   { href: "/contact", label: "Contact", icon: RequestQuote },
 ];
 
@@ -48,6 +49,8 @@ export default function Header() {
               key={link.href}
               href={link.href}
               className={`font-medium transition-colors ${
+                link.lgOnly ? "hidden lg:inline" : ""
+              } ${
                 isActive(link.href)
                   ? "text-orange-600 font-bold border-b-2 border-orange-600"
                   : "text-stone-600 hover:text-orange-600"
