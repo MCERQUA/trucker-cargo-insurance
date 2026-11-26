@@ -32,9 +32,9 @@ export default function BottomNav() {
             <Link
               key={item.href}
               href={item.href}
-              className={`flex flex-col items-center justify-center tap-highlight-transparent duration-200 ${
+              className={`flex min-h-11 min-w-11 flex-col items-center justify-center rounded-xl px-2 py-1 tap-highlight-transparent duration-200 ${
                 active
-                  ? "text-orange-600 dark:text-orange-500 bg-orange-50 dark:bg-orange-900/20 rounded-xl px-3 py-1"
+                  ? "text-orange-600 dark:text-orange-500 bg-orange-50 dark:bg-orange-900/20"
                   : "text-stone-500 dark:text-stone-400"
               }`}
             >

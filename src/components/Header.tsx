@@ -35,7 +35,7 @@ export default function Header() {
     <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
       <div className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex min-h-11 items-center gap-2">
           <LocalShipping className="text-primary text-2xl" />
           <span className="text-xl font-extrabold tracking-tighter text-stone-900 font-headline">
             Trucker Cargo Insurance
@@ -71,7 +71,7 @@ export default function Header() {
 
         {/* Mobile Menu Icon */}
         <button
-          className="md:hidden text-primary"
+          className="md:hidden -mr-2 inline-flex min-h-11 min-w-11 items-center justify-center text-primary"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -104,7 +104,7 @@ export default function Header() {
             <Link
               href="/quote"
               onClick={() => setMobileMenuOpen(false)}
-              className="mt-4 bg-secondary hover:bg-secondary-container text-white px-6 py-3 rounded-xl font-bold text-sm tracking-tight"
+              className="mt-4 flex min-h-11 items-center bg-secondary hover:bg-secondary-container text-white px-6 py-3 rounded-xl font-bold text-sm tracking-tight"
             >
               GET A QUOTE
             </Link>

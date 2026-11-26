@@ -273,6 +273,157 @@
     <input type="text" name="_info_driver10_yearsCdl" />
     <textarea name="_info_driver10_violations"></textarea>
     <textarea name="_info_driver10_accidents"></textarea>
+    <!-- ACORD 125/126 underwriting step (src/lib/acordYnSpec.ts, canonical shared names; generated from allFieldNames(), add-only) -->
+    <input type="radio" name="currentlyInsured" value="Yes" /><input type="radio" name="currentlyInsured" value="No" />
+    <input type="radio" name="lossesLast3Years" value="Yes" /><input type="radio" name="lossesLast3Years" value="No" />
+    <input type="text" name="lossCount" />
+    <input type="text" name="lossLineOfBusiness" />
+    <input type="text" name="lossDate" />
+    <input type="text" name="lossDescription" />
+    <input type="text" name="lossHistoryStatus" />
+    <input type="text" name="lossAmountPaid" />
+    <input type="text" name="lossAmountReserved" />
+    <input type="radio" name="lossSubrogation" value="Yes" /><input type="radio" name="lossSubrogation" value="No" />
+    <input type="radio" name="yn_buildingLeasedToOthers" value="Yes" /><input type="radio" name="yn_buildingLeasedToOthers" value="No" />
+    <textarea name="ynExplain_buildingLeasedToOthers"></textarea>
+    <input type="radio" name="yn_applicantSubsidiary" value="Yes" /><input type="radio" name="yn_applicantSubsidiary" value="No" />
+    <input type="text" name="general_applicantSubsidiary__parentName" />
+    <input type="text" name="general_applicantSubsidiary__relationship" />
+    <input type="text" name="general_applicantSubsidiary__ownershipPercentage" />
+    <input type="radio" name="yn_applicantHasSubsidiaries" value="Yes" /><input type="radio" name="yn_applicantHasSubsidiaries" value="No" />
+    <input type="text" name="general_applicantHasSubsidiaries__subsidiaryName" />
+    <input type="text" name="general_applicantHasSubsidiaries__relationship" />
+    <input type="text" name="general_applicantHasSubsidiaries__ownershipPercentage" />
+    <input type="radio" name="yn_safetyProgramsExist" value="Yes" /><input type="radio" name="yn_safetyProgramsExist" value="No" />
+    <input type="text" name="safetyProgramElements" />
+    <input type="text" name="safetyOtherText" />
+    <input type="radio" name="yn_exposureFlammables" value="Yes" /><input type="radio" name="yn_exposureFlammables" value="No" />
+    <input type="text" name="general_exposureFlammables__description" />
+    <input type="radio" name="yn_otherInsurance" value="Yes" /><input type="radio" name="yn_otherInsurance" value="No" />
+    <input type="text" name="general_otherInsurance__lineOfBusiness" />
+    <input type="radio" name="yn_coverageTerminated" value="Yes" /><input type="radio" name="yn_coverageTerminated" value="No" />
+    <input type="text" name="general_coverageTerminated__nonPayment" />
+    <input type="text" name="general_coverageTerminated__nonRenewal" />
+    <input type="text" name="general_coverageTerminated__agentStopRepresenting" />
+    <input type="text" name="general_coverageTerminated__underwriting" />
+    <input type="text" name="general_coverageTerminated__conditionCorrected" />
+    <input type="text" name="general_coverageTerminated__conditionCorrectedDescription" />
+    <input type="radio" name="yn_pastAllegations" value="Yes" /><input type="radio" name="yn_pastAllegations" value="No" />
+    <input type="text" name="general_pastAllegations__description" />
+    <input type="radio" name="yn_indictedOrConvicted" value="Yes" /><input type="radio" name="yn_indictedOrConvicted" value="No" />
+    <input type="text" name="general_indictedOrConvicted__description" />
+    <input type="radio" name="yn_safetyViolations" value="Yes" /><input type="radio" name="yn_safetyViolations" value="No" />
+    <input type="text" name="general_safetyViolations__occurenceDate" />
+    <input type="text" name="general_safetyViolations__explanation" />
+    <input type="text" name="general_safetyViolations__resolution" />
+    <input type="text" name="general_safetyViolations__resolutionDate" />
+    <input type="radio" name="yn_negativeFinancialAction" value="Yes" /><input type="radio" name="yn_negativeFinancialAction" value="No" />
+    <input type="text" name="general_negativeFinancialAction__occurenceDate" />
+    <input type="text" name="general_negativeFinancialAction__explanation" />
+    <input type="text" name="general_negativeFinancialAction__resolution" />
+    <input type="text" name="general_negativeFinancialAction__resolutionDate" />
+    <input type="radio" name="yn_judgementOrLien" value="Yes" /><input type="radio" name="yn_judgementOrLien" value="No" />
+    <input type="text" name="general_judgementOrLien__occurenceDate" />
+    <input type="text" name="general_judgementOrLien__explanation" />
+    <input type="text" name="general_judgementOrLien__resolution" />
+    <input type="text" name="general_judgementOrLien__resolutionDate" />
+    <input type="radio" name="yn_businessInTrust" value="Yes" /><input type="radio" name="yn_businessInTrust" value="No" />
+    <input type="text" name="general_businessInTrust__name" />
+    <input type="radio" name="yn_foreignOperations" value="Yes" /><input type="radio" name="yn_foreignOperations" value="No" />
+    <textarea name="ynExplain_foreignOperations"></textarea>
+    <input type="radio" name="yn_otherVentures" value="Yes" /><input type="radio" name="yn_otherVentures" value="No" />
+    <input type="text" name="general_otherVentures__description" />
+    <input type="radio" name="yn_possessDrones" value="Yes" /><input type="radio" name="yn_possessDrones" value="No" />
+    <input type="text" name="general_possessDrones__description" />
+    <input type="radio" name="yn_hireDroneOperators" value="Yes" /><input type="radio" name="yn_hireDroneOperators" value="No" />
+    <input type="text" name="general_hireDroneOperators__description" />
+    <input type="radio" name="yn_priorExclusionUninsured" value="Yes" /><input type="radio" name="yn_priorExclusionUninsured" value="No" />
+    <textarea name="ynExplain_priorExclusionUninsured"></textarea>
+    <input type="radio" name="yn_tailCoveragePurchased" value="Yes" /><input type="radio" name="yn_tailCoveragePurchased" value="No" />
+    <textarea name="ynExplain_tailCoveragePurchased"></textarea>
+    <input type="radio" name="yn_drawsPlansForOthers" value="Yes" /><input type="radio" name="yn_drawsPlansForOthers" value="No" />
+    <textarea name="ynExplain_drawsPlansForOthers"></textarea>
+    <input type="radio" name="yn_blastingOrExplosives" value="Yes" /><input type="radio" name="yn_blastingOrExplosives" value="No" />
+    <textarea name="ynExplain_blastingOrExplosives"></textarea>
+    <input type="radio" name="yn_excavationOrEarthMoving" value="Yes" /><input type="radio" name="yn_excavationOrEarthMoving" value="No" />
+    <textarea name="ynExplain_excavationOrEarthMoving"></textarea>
+    <input type="radio" name="yn_subsRequireLowerLimits" value="Yes" /><input type="radio" name="yn_subsRequireLowerLimits" value="No" />
+    <textarea name="ynExplain_subsRequireLowerLimits"></textarea>
+    <input type="radio" name="yn_subsWorkWithoutCOI" value="Yes" /><input type="radio" name="yn_subsWorkWithoutCOI" value="No" />
+    <textarea name="ynExplain_subsWorkWithoutCOI"></textarea>
+    <input type="radio" name="yn_leaseEquipmentToOthers" value="Yes" /><input type="radio" name="yn_leaseEquipmentToOthers" value="No" />
+    <textarea name="ynExplain_leaseEquipmentToOthers"></textarea>
+    <input type="radio" name="yn_installServiceDemoProducts" value="Yes" /><input type="radio" name="yn_installServiceDemoProducts" value="No" />
+    <textarea name="ynExplain_installServiceDemoProducts"></textarea>
+    <input type="radio" name="yn_foreignProducts" value="Yes" /><input type="radio" name="yn_foreignProducts" value="No" />
+    <textarea name="ynExplain_foreignProducts"></textarea>
+    <input type="radio" name="yn_researchAndDevelopment" value="Yes" /><input type="radio" name="yn_researchAndDevelopment" value="No" />
+    <textarea name="ynExplain_researchAndDevelopment"></textarea>
+    <input type="radio" name="yn_guaranteesWarranties" value="Yes" /><input type="radio" name="yn_guaranteesWarranties" value="No" />
+    <textarea name="ynExplain_guaranteesWarranties"></textarea>
+    <input type="radio" name="yn_aircraftSpaceProducts" value="Yes" /><input type="radio" name="yn_aircraftSpaceProducts" value="No" />
+    <textarea name="ynExplain_aircraftSpaceProducts"></textarea>
+    <input type="radio" name="yn_productsRecalled" value="Yes" /><input type="radio" name="yn_productsRecalled" value="No" />
+    <textarea name="ynExplain_productsRecalled"></textarea>
+    <input type="radio" name="yn_productsRepackagedUnderLabel" value="Yes" /><input type="radio" name="yn_productsRepackagedUnderLabel" value="No" />
+    <textarea name="ynExplain_productsRepackagedUnderLabel"></textarea>
+    <input type="radio" name="yn_productsUnderOthersLabel" value="Yes" /><input type="radio" name="yn_productsUnderOthersLabel" value="No" />
+    <textarea name="ynExplain_productsUnderOthersLabel"></textarea>
+    <input type="radio" name="yn_vendorsCoverageRequired" value="Yes" /><input type="radio" name="yn_vendorsCoverageRequired" value="No" />
+    <textarea name="ynExplain_vendorsCoverageRequired"></textarea>
+    <input type="radio" name="yn_sellsToOtherNamedInsured" value="Yes" /><input type="radio" name="yn_sellsToOtherNamedInsured" value="No" />
+    <textarea name="ynExplain_sellsToOtherNamedInsured"></textarea>
+    <input type="radio" name="yn_medicalFacilities" value="Yes" /><input type="radio" name="yn_medicalFacilities" value="No" />
+    <textarea name="ynExplain_medicalFacilities"></textarea>
+    <input type="radio" name="yn_radioactiveExposure" value="Yes" /><input type="radio" name="yn_radioactiveExposure" value="No" />
+    <textarea name="ynExplain_radioactiveExposure"></textarea>
+    <input type="radio" name="yn_hazardousMaterialOps" value="Yes" /><input type="radio" name="yn_hazardousMaterialOps" value="No" />
+    <textarea name="ynExplain_hazardousMaterialOps"></textarea>
+    <input type="radio" name="yn_operationsSoldAcquired" value="Yes" /><input type="radio" name="yn_operationsSoldAcquired" value="No" />
+    <textarea name="ynExplain_operationsSoldAcquired"></textarea>
+    <input type="radio" name="yn_rentOrLoanEquipment" value="Yes" /><input type="radio" name="yn_rentOrLoanEquipment" value="No" />
+    <textarea name="ynExplain_rentOrLoanEquipment"></textarea>
+    <input type="text" name="rentEquipmentTypes" />
+    <input type="radio" name="rentEquipmentInstructionGiven" value="Yes" /><input type="radio" name="rentEquipmentInstructionGiven" value="No" />
+    <input type="radio" name="yn_watercraftDocksFloats" value="Yes" /><input type="radio" name="yn_watercraftDocksFloats" value="No" />
+    <textarea name="ynExplain_watercraftDocksFloats"></textarea>
+    <input type="radio" name="yn_parkingFacilities" value="Yes" /><input type="radio" name="yn_parkingFacilities" value="No" />
+    <textarea name="ynExplain_parkingFacilities"></textarea>
+    <input type="radio" name="yn_parkingFeeCharged" value="Yes" /><input type="radio" name="yn_parkingFeeCharged" value="No" />
+    <textarea name="ynExplain_parkingFeeCharged"></textarea>
+    <input type="radio" name="yn_recreationFacilities" value="Yes" /><input type="radio" name="yn_recreationFacilities" value="No" />
+    <textarea name="ynExplain_recreationFacilities"></textarea>
+    <input type="radio" name="yn_lodgingOperations" value="Yes" /><input type="radio" name="yn_lodgingOperations" value="No" />
+    <textarea name="ynExplain_lodgingOperations"></textarea>
+    <input type="radio" name="yn_swimmingPool" value="Yes" /><input type="radio" name="yn_swimmingPool" value="No" />
+    <input type="text" name="poolConstruction" />
+    <input type="text" name="poolSafetyFeatures" />
+    <input type="radio" name="yn_socialEvents" value="Yes" /><input type="radio" name="yn_socialEvents" value="No" />
+    <textarea name="ynExplain_socialEvents"></textarea>
+    <input type="radio" name="yn_athleticTeams" value="Yes" /><input type="radio" name="yn_athleticTeams" value="No" />
+    <input type="text" name="athleticSportDescription" />
+    <input type="radio" name="athleticContactSport" value="Yes" /><input type="radio" name="athleticContactSport" value="No" />
+    <input type="text" name="athleticSponsorshipExtent" />
+    <input type="text" name="athleticTeamAgeGroup" />
+    <input type="radio" name="yn_structuralAlterations" value="Yes" /><input type="radio" name="yn_structuralAlterations" value="No" />
+    <textarea name="ynExplain_structuralAlterations"></textarea>
+    <input type="radio" name="yn_demolitionExposure" value="Yes" /><input type="radio" name="yn_demolitionExposure" value="No" />
+    <textarea name="ynExplain_demolitionExposure"></textarea>
+    <input type="radio" name="yn_activeJointVentures" value="Yes" /><input type="radio" name="yn_activeJointVentures" value="No" />
+    <textarea name="ynExplain_activeJointVentures"></textarea>
+    <input type="radio" name="yn_leaseEmployees" value="Yes" /><input type="radio" name="yn_leaseEmployees" value="No" />
+    <textarea name="ynExplain_leaseEmployees"></textarea>
+    <input type="radio" name="leaseEmployeesWorkersCompCarried" value="Yes" /><input type="radio" name="leaseEmployeesWorkersCompCarried" value="No" />
+    <input type="radio" name="yn_laborInterchange" value="Yes" /><input type="radio" name="yn_laborInterchange" value="No" />
+    <textarea name="ynExplain_laborInterchange"></textarea>
+    <input type="radio" name="yn_dayCareFacilities" value="Yes" /><input type="radio" name="yn_dayCareFacilities" value="No" />
+    <textarea name="ynExplain_dayCareFacilities"></textarea>
+    <input type="radio" name="yn_crimesOnPremises" value="Yes" /><input type="radio" name="yn_crimesOnPremises" value="No" />
+    <textarea name="ynExplain_crimesOnPremises"></textarea>
+    <input type="radio" name="yn_formalSafetyPolicy" value="Yes" /><input type="radio" name="yn_formalSafetyPolicy" value="No" />
+    <textarea name="ynExplain_formalSafetyPolicy"></textarea>
+    <input type="radio" name="yn_promotionalSafetyClaims" value="Yes" /><input type="radio" name="yn_promotionalSafetyClaims" value="No" />
+    <textarea name="ynExplain_promotionalSafetyClaims"></textarea>
     <!-- legacy /contact form fields (kept; that form posts the same form name) -->
     <input type="text" name="dotNumber" />
     <select name="fleetSize"><option>1-5 Vehicles</option><option>6-20 Vehicles</option><option>21-50 Vehicles</option><option>50+ Vehicles</option></select>

@@ -27,11 +27,11 @@ export default function Footer() {
           <h5 className="font-headline font-bold text-primary dark:text-white mb-6 uppercase text-xs tracking-widest">
             Coverage
           </h5>
-          <ul className="space-y-4">
+          <ul className="space-y-0">
             <li>
               <Link
                 href="/services"
-                className="text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-50 underline transition-all"
+                className="inline-flex min-h-11 min-w-11 items-center text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-50 underline transition-all"
               >
                 Cargo Liability
               </Link>
@@ -39,7 +39,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/services"
-                className="text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-50 underline transition-all"
+                className="inline-flex min-h-11 min-w-11 items-center text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-50 underline transition-all"
               >
                 Primary Liability
               </Link>
@@ -47,7 +47,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/services"
-                className="text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-50 underline transition-all"
+                className="inline-flex min-h-11 min-w-11 items-center text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-50 underline transition-all"
               >
                 Fleet Safety
               </Link>
@@ -55,7 +55,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/services"
-                className="text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-50 underline transition-all"
+                className="inline-flex min-h-11 min-w-11 items-center text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-50 underline transition-all"
               >
                 Physical Damage
               </Link>
@@ -68,11 +68,11 @@ export default function Footer() {
           <h5 className="font-headline font-bold text-primary dark:text-white mb-6 uppercase text-xs tracking-widest">
             Legal
           </h5>
-          <ul className="space-y-4">
+          <ul className="space-y-0">
             <li>
               <Link
                 href="/privacy"
-                className="text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-50 underline transition-all"
+                className="inline-flex min-h-11 min-w-11 items-center text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-50 underline transition-all"
               >
                 Privacy Policy
               </Link>
@@ -80,7 +80,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/contact"
-                className="text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-50 underline transition-all"
+                className="inline-flex min-h-11 min-w-11 items-center text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-50 underline transition-all"
               >
                 Terms of Service
               </Link>
@@ -88,14 +88,14 @@ export default function Footer() {
             <li>
               <Link
                 href="/tools"
-                className="text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-50 underline transition-all"
+                className="inline-flex min-h-11 min-w-11 items-center text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-50 underline transition-all"
               >
                 FMCSA Compliance
               </Link>
             </li>            <li>
               <Link
                 href="/faq"
-                className="text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-50 underline transition-all"
+                className="inline-flex min-h-11 min-w-11 items-center text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-50 underline transition-all"
               >
                 FAQ
               </Link>
@@ -108,24 +108,24 @@ export default function Footer() {
           <h5 className="font-headline font-bold text-primary dark:text-white mb-6 uppercase text-xs tracking-widest">
             Connect
           </h5>
-          <div className="flex gap-4 mb-4">
+          <div className="-ml-3 flex gap-1 mb-4">
             <a
               href="tel:1-844-967-5247"
-              className="text-stone-500 hover:text-secondary transition-colors"
+              className="inline-flex min-h-11 min-w-11 items-center justify-center text-stone-500 hover:text-secondary transition-colors"
               aria-label="Phone"
             >
               <Phone className="text-xl" />
             </a>
             <a
               href="mailto:josh@contractorschoiceagency.com"
-              className="text-stone-500 hover:text-secondary transition-colors"
+              className="inline-flex min-h-11 min-w-11 items-center justify-center text-stone-500 hover:text-secondary transition-colors"
               aria-label="Email"
             >
               <Mail className="text-xl" />
             </a>
             <a
               href="/contact"
-              className="text-stone-500 hover:text-secondary transition-colors"
+              className="inline-flex min-h-11 min-w-11 items-center justify-center text-stone-500 hover:text-secondary transition-colors"
               aria-label="Location"
             >
               <LocationOn className="text-xl" />

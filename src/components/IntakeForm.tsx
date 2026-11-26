@@ -13,6 +13,8 @@ import {
   countKey,
   type Field,
 } from "@/lib/intakeSpec";
+import { validateYnStep, ynStepPayload } from "@/lib/acordYnSpec";
+import AcordYnStep from "@/components/AcordYnStep";
 
 /**
  * Multi-step trucking intake. Posts through Netlify Forms (same pattern as QuoteForm):
@@ -30,8 +32,10 @@ const STEPS = [
   "Trailers",
   "Drivers",
   "Coverages wanted",
+  "Underwriting & loss history",
   "Current insurance",
 ];
+const YN_STEP = 5; // ACORD 125/126 yes/no block (AcordYnStep); canonical names, see acordYnSpec.ts
 
 const inputCls =
   "w-full min-h-12 rounded-lg border border-outline bg-surface-container-lowest px-3 py-3 text-base text-primary focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary/30";
@@ -131,6 +135,14 @@ export default function IntakeForm() {
         return;
       }
     }
+    if (step === YN_STEP) {
+      const problem = validateYnStep(vals);
+      if (problem) {
+        setMsg(problem.msg);
+        document.getElementById(`f-${problem.key}`)?.focus();
+        return;
+      }
+    }
     go(Math.min(step + 1, STEPS.length - 1));
   };
 
@@ -146,6 +158,7 @@ export default function IntakeForm() {
       if (kept.length) put(countKey(g.id), String(kept.length));
       kept.forEach((r, i) => g.fields.forEach((f) => put(rowKey(g.id, i + 1, f.key), r[f.key])));
     }
+    Object.assign(out, ynStepPayload(vals)); // answered yn_* + their follow-ups + loss row; blanks not sent
     return out;
   };
 
@@ -266,7 +279,9 @@ export default function IntakeForm() {
           </div>
         )}
 
-        {step === 5 && (
+        {step === YN_STEP && <AcordYnStep vals={vals} setVal={setVal} />}
+
+        {step === 6 && (
           <div className={grid}>
             {STEP6.map((f) => (
               <FieldInput key={f.key} f={f} id={`f-${f.key}`} value={vals[f.key] ?? ""} onChange={(v) => setVal(f.key, v)} />

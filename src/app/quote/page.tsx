@@ -28,8 +28,8 @@ export default function QuotePage() {
             Get a trucking insurance quote
           </h1>
           <p className="mt-5 text-lg font-light leading-relaxed text-on-primary-container">
-            Six short steps: your business, trucks, trailers, drivers, the coverage you want and your
-            current insurance. Skip anything you do not have handy.
+            Seven short steps: your business, trucks, trailers, drivers, the coverage you want, the
+            standard underwriting questions and your current insurance. Skip anything you do not have handy.
           </p>
         </div>
       </section>

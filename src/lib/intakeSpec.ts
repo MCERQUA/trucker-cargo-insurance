@@ -5,10 +5,16 @@
 // Naming convention (CCA lead renderer): canonical keys name, businessName, email,
 // phone, address, city, state, zip; everything else is posted as _info_<name>.
 // Never prefix with a bare underscore only: the renderer skips those.
-// Deliberately NO Social Security, bank or card fields, and no text-consent field.
+// Deliberately NO Social Security, bank, card or FEIN fields, and no text-consent field.
+// (_info_fein was asked until 2026-11; it stays declared in public/__forms.html, which is add-only.)
+//
+// The ACORD 125/126 underwriting step (57 yn_* questions + loss row) lives in acordYnSpec.ts and
+// posts the shared canonical names (no _info_ prefix) that map_quote_125.py reads.
 
 export const FORM_NAME = "quote-request";
 export const MAX_ROWS = 10;
+
+import { ynStepFieldNames } from "./acordYnSpec";
 
 export type FieldType = "text" | "email" | "tel" | "date" | "number" | "select" | "textarea";
 
@@ -37,14 +43,6 @@ export const STEP1: Field[] = [
   { key: "businessName", label: "Legal business name", required: true, autoComplete: "organization" },
   { key: info("dba"), label: "DBA (doing business as)" },
   { key: info("entityType"), label: "Entity type", type: "select", options: ENTITY_TYPES },
-  {
-    key: info("fein"),
-    label: "FEIN (business EIN)",
-    inputMode: "numeric",
-    maxLength: 10,
-    placeholder: "12-3456789",
-    hint: "Business EIN only. Never enter a Social Security number.",
-  },
   { key: "address", label: "Business street address", autoComplete: "street-address", wide: true },
   { key: "city", label: "City", autoComplete: "address-level2" },
   { key: "state", label: "State", autoComplete: "address-level1", maxLength: 2, placeholder: "AZ" },
@@ -132,5 +130,6 @@ export function allFieldNames(): string[] {
     names.push(countKey(g.id));
     for (let n = 1; n <= MAX_ROWS; n++) for (const f of g.fields) names.push(rowKey(g.id, n, f.key));
   }
+  names.push(...ynStepFieldNames());
   return names;
 }
