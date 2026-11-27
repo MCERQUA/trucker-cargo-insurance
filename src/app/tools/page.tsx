@@ -34,9 +34,9 @@ const faqs = [
       "Yes, we offer specialized endorsements for Reefer Breakdown that cover cargo spoilage due to mechanical failure of the refrigeration unit, provided maintenance schedules have been met.",
   },
   {
-    question: "How quickly can I get a Certificate of Insurance (COI)?",
+    question: "How do I get a Certificate of Insurance (COI)?",
     answer:
-      "Our 24/7 digital portal generates COIs instantly. For complex bind requests, our team typically responds within 2 hours during business hours.",
+      "Contact us with the certificate holder details your broker or shipper requires and we will help you get the COI you need.",
   },
   {
     question: "What is the minimum deductible for cargo coverage?",

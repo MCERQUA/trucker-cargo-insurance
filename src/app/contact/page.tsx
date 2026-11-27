@@ -11,14 +11,14 @@ const SITE_URL = "https://truckercargoinsurance.com";
 export const metadata: Metadata = {
   title: "Get a Cargo Insurance Quote — Trucker Cargo Insurance",
   description:
-    "Contact our cargo insurance specialists for quotes, claims, and policy support. Headquartered in Chandler, AZ with 24/7 claims response. Call 844-967-5247.",
+    "Contact our cargo insurance specialists for quotes, claims, and policy support. Headquartered in Chandler, AZ. Call 844-967-5247.",
   alternates: { canonical: "/contact" },
   openGraph: {
     type: "website",
     url: `${SITE_URL}/contact`,
     title: "Contact Trucker Cargo Insurance — Quotes & Claims",
     description:
-      "Reach our specialists for quotes, claims, and policy updates. Chandler, AZ HQ. 24/7 claims response.",
+      "Reach our specialists for quotes, claims, and policy updates. Chandler, AZ HQ.",
     siteName: "Trucker Cargo Insurance",
     locale: "en_US",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Trucker Cargo Insurance — Contact our team" }],
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Contact Trucker Cargo Insurance — Quotes & Claims",
-    description: "Quotes, claims, policy support. 24/7 response. Call 844-967-5247.",
+    description: "Quotes, claims, policy support. Call 844-967-5247.",
     images: ["/og-image.jpg"],
   },
 };
@@ -46,7 +46,7 @@ const contactPageSchema = {
   url: `${SITE_URL}/contact`,
   name: "Contact Trucker Cargo Insurance",
   description:
-    "Reach our cargo insurance specialists for quotes, claims, and policy updates. Headquarters in Chandler, AZ with 24/7 claims support.",
+    "Reach our cargo insurance specialists for quotes, claims, and policy updates. Headquarters in Chandler, AZ.",
   mainEntity: { "@id": `${SITE_URL}/#organization` },
 };
 
@@ -74,7 +74,7 @@ export default function ContactPage() {
           <div className="lg:col-span-7 bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-[0_20px_40px_rgba(28,20,16,0.04)]">
             <h2 className="font-headline font-bold text-2xl mb-8 flex items-center gap-3">
               <RequestQuote className="text-secondary text-2xl" />
-              Instant Quote Request
+              Quote Request
             </h2>
             <QuoteForm />
           </div>
@@ -114,7 +114,7 @@ export default function ContactPage() {
                   <span className="text-sm font-bold text-primary">08:00 - 14:00 EST</span>
                 </li>
                 <li className="flex justify-between items-center text-secondary">
-                  <span className="text-sm font-bold">Claims (24/7 Hotline)</span>
+                  <span className="text-sm font-bold">Claims Hotline</span>
                   <Schedule style={{ fontVariationSettings: "'FILL' 1" }} className="text-sm" />
                 </li>
               </ul>
@@ -141,8 +141,7 @@ export default function ContactPage() {
             <div className="mb-8">
               <h2 className="font-headline font-bold text-3xl mb-4">The Command Center</h2>
               <p className="text-on-surface-variant leading-relaxed">
-                Based in Chandler, AZ, our HQ coordinates coverage for owner-operators and fleets
-                across 48 states.
+                Based in Chandler, AZ, our HQ coordinates coverage for owner-operators and fleets.
               </p>
             </div>
             <div className="space-y-6">

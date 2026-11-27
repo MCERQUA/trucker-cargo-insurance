@@ -18,7 +18,7 @@ const ORG_REF = { "@id": `${SITE_URL}/#organization` };
 export const metadata: Metadata = {
   title: "Trucking Insurance Coverage — Motor Truck Cargo, Liability, Physical Damage",
   description:
-    "Coverage built for the road: Motor Truck Cargo, Primary Liability, Physical Damage, and General Liability for owner-operators and fleets. 48-state coverage.",
+    "Coverage built for the road: Motor Truck Cargo, Primary Liability, Physical Damage, and General Liability for owner-operators and fleets.",
   alternates: { canonical: "/services" },
   openGraph: {
     type: "website",
@@ -252,11 +252,11 @@ export default function ServicesPage() {
               <Speed className="text-secondary-container text-3xl" />
               <div>
                 <h4 className="font-headline font-bold text-primary mb-2">
-                  Fast Certificate Issuance
+                  Certificates of Insurance
                 </h4>
                 <p className="text-sm text-on-surface-variant">
-                  Don't lose a load waiting for paperwork. Our 24/7 digital portal generates COIs
-                  instantly.
+                  Don't lose a load waiting for paperwork. Ask us for the certificates of insurance
+                  your brokers and shippers require.
                 </p>
               </div>
             </div>
@@ -267,7 +267,7 @@ export default function ServicesPage() {
                   Specialist Claims Team
                 </h4>
                 <p className="text-sm text-on-surface-variant">
-                  Dedicated adjusters who understand the complexity of cargo claims and logistics law.
+                  Claims support that understands the complexity of cargo claims and logistics law.
                 </p>
               </div>
             </div>
@@ -326,7 +326,7 @@ export default function ServicesPage() {
             Ready to get covered?
           </h2>
           <p className="text-on-primary-container text-xl mb-12 leading-relaxed">
-            Get a bindable quote in minutes. Our specialists will customize a policy that fits your
+            Request a quote. Our specialists will customize a policy that fits your
             fleet's exact needs.
           </p>
           <Link

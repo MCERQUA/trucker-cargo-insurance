@@ -16,7 +16,7 @@ const insuranceAgencySchema = {
   name: "Trucker Cargo Insurance",
   url: SITE_URL,
   description:
-    "High-performance insurance infrastructure for the trucking industry. Precision underwriting for modern fleets with bindable quotes in minutes.",
+    "High-performance insurance infrastructure for the trucking industry. Precision underwriting for modern fleets.",
   email: "josh@contractorschoiceagency.com",
   telephone: "+18449675247",
   address: {
@@ -72,7 +72,7 @@ const websiteSchema = {
   url: SITE_URL,
   name: "Trucker Cargo Insurance",
   description:
-    "Trucking cargo insurance with 48-state coverage, 5-minute bindable quotes, and FMCSA-compliant filings.",
+    "Trucking cargo insurance with FMCSA-compliant filings for owner-operators and fleets.",
   publisher: {
     "@id": `${SITE_URL}/#organization`,
   },
@@ -98,7 +98,7 @@ export const metadata: Metadata = {
     template: "%s | Trucker Cargo Insurance",
   },
   description:
-    "High-performance insurance infrastructure for the trucking industry. Precision underwriting for modern fleets. Get bindable quotes in minutes.",
+    "High-performance insurance infrastructure for the trucking industry. Precision underwriting for modern fleets. Get a free quote.",
   keywords: [
     "trucking insurance",
     "cargo insurance",
@@ -113,7 +113,7 @@ export const metadata: Metadata = {
     url: SITE_URL,
     title: "Trucker Cargo Insurance | Trucking Cargo Insurance",
     description:
-      "High-performance insurance infrastructure for the trucking industry. 48-state coverage. Bindable quotes in 5 minutes.",
+      "High-performance insurance infrastructure for the trucking industry. Cargo, liability, and physical damage coverage.",
     siteName: "Trucker Cargo Insurance",
     locale: "en_US",
     images: [
@@ -121,7 +121,7 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Trucker Cargo Insurance — 48-state trucking and cargo coverage",
+        alt: "Trucker Cargo Insurance — trucking and cargo coverage",
       },
     ],
   },
@@ -129,7 +129,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Trucker Cargo Insurance | Trucking Cargo Insurance",
     description:
-      "48-state trucking & cargo insurance — bindable quotes in 5 minutes. Motor truck cargo, primary liability, physical damage, general liability.",
+      "Trucking & cargo insurance. Motor truck cargo, primary liability, physical damage, general liability.",
     images: ["/og-image.jpg"],
   },
   robots: {

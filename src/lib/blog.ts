@@ -80,7 +80,7 @@ If you're hauling freight for hire under your own authority, the answer is almos
 
 Consider: a single theft event on an electronics load could cost $200,000 or more. A rear-end collision that destroys a full trailer of merchandise could wipe out years of profits. Motor Truck Cargo Insurance is not an expense — it's risk management that keeps your business in operation.
 
-Ready to get a quote? Call us at **844-967-5247** or use our online quote tool to get bindable coverage in minutes.
+Ready to get a quote? Call us at **844-967-5247** or use our online quote tool to request coverage.
     `,
   },
   {
@@ -182,7 +182,7 @@ Flatbed haulers often pay slightly less than reefer operators but more than dry 
 
 ## Get a Real Number
 
-The best way to know your exact cost is to get a quote tailored to your specific operation. We specialize in cargo insurance for owner-operators and can typically provide a bindable quote in under 5 minutes.
+The best way to know your exact cost is to get a quote tailored to your specific operation. We specialize in cargo insurance for owner-operators and can help you request a quote tailored to your operation.
 
 Call us at **844-967-5247** or start your online quote today.
     `,

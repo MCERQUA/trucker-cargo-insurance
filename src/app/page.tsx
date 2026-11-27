@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import {
   LocalShipping,
-  Verified,
   Inventory,
   Shield,
   Build,
@@ -42,7 +41,7 @@ export default function Home() {
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary/20 rounded-full border border-secondary/30">
               <span className="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
               <span className="text-secondary font-bold text-xs uppercase tracking-widest font-label">
-                Now Covering 48 States
+                Trucking Cargo Insurance
               </span>
             </div>
             <h1 className="font-headline text-5xl md:text-7xl font-extrabold text-white leading-[1.1] tracking-tight">
@@ -52,7 +51,7 @@ export default function Home() {
             </h1>
             <p className="text-on-primary-container text-xl max-w-lg leading-relaxed">
               Precision logistics insurance engineered for the high-stakes world of heavy
-              hauling. Get bindable quotes in minutes, not days.
+              hauling. Get a free quote for your cargo and fleet coverage.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -93,8 +92,8 @@ export default function Home() {
                 />
               </div>
               <div className="text-sm">
-                <p className="text-white font-bold">12,000+ Carriers</p>
-                <p className="text-on-primary-container">Trusted nationwide</p>
+                <p className="text-white font-bold">Owner-Operators &amp; Fleets</p>
+                <p className="text-on-primary-container">Cargo and liability coverage</p>
               </div>
             </div>
           </div>
@@ -103,27 +102,27 @@ export default function Home() {
             <div className="relative bg-surface-container-lowest p-8 rounded-[2rem] shadow-2xl border border-white/10">
               <div className="space-y-6">
                 <div className="flex items-center justify-between border-b border-surface-container pb-4">
-                  <span className="text-primary font-bold font-headline">Live Cargo Stats</span>
+                  <span className="text-primary font-bold font-headline">Coverage Lines</span>
                   <Analytics className="text-secondary text-2xl" />
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-surface-container-low p-4 rounded-2xl">
                     <p className="text-on-surface-variant text-xs font-label uppercase">
-                      Claims Ratio
+                      Coverage
                     </p>
-                    <p className="text-2xl font-black text-primary">0.08%</p>
+                    <p className="text-2xl font-black text-primary">Cargo</p>
                   </div>
                   <div className="bg-surface-container-low p-4 rounded-2xl">
                     <p className="text-on-surface-variant text-xs font-label uppercase">
-                      Avg Response
+                      Coverage
                     </p>
-                    <p className="text-2xl font-black text-primary">12m</p>
+                    <p className="text-2xl font-black text-primary">Liability</p>
                   </div>
                 </div>
                 <div className="bg-primary text-white p-6 rounded-2xl relative overflow-hidden">
                   <div className="relative z-10">
-                    <p className="text-sm opacity-80 mb-1">Total Coverage Binded</p>
-                    <p className="text-3xl font-black">$4.2B+</p>
+                    <p className="text-sm opacity-80 mb-1">Also available</p>
+                    <p className="text-3xl font-black">Physical Damage</p>
                   </div>
                   <div className="absolute top-0 right-0 p-4 opacity-10">
                     <Security className="text-7xl" />
@@ -133,36 +132,9 @@ export default function Home() {
                   href="/contact"
                   className="w-full py-4 bg-surface-container-highest rounded-xl text-primary font-bold hover:bg-surface-dim transition-colors block text-center"
                 >
-                  Access Portal
+                  Contact Us
                 </Link>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Trust Indicators */}
-      <section className="bg-white py-12">
-        <div className="max-w-7xl mx-auto px-6">
-          <p className="text-center text-on-surface-variant text-sm font-bold tracking-[0.2em] uppercase mb-10">
-            Industry Certified Partners
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-            <div className="flex items-center gap-2 font-black text-xl text-primary tracking-tighter">
-              <Verified className="text-secondary text-2xl" />
-              FMCSA
-            </div>
-            <div className="flex items-center gap-2 font-black text-xl text-primary tracking-tighter">
-              <Verified className="text-secondary text-2xl" />
-              ATA
-            </div>
-            <div className="flex items-center gap-2 font-black text-xl text-primary tracking-tighter">
-              <Verified className="text-secondary text-2xl" />
-              DOT
-            </div>
-            <div className="flex items-center gap-2 font-black text-xl text-primary tracking-tighter">
-              <Verified className="text-secondary text-2xl" />
-              OIDA
             </div>
           </div>
         </div>
@@ -176,8 +148,8 @@ export default function Home() {
               Built for the Road
             </h2>
             <p className="text-on-surface-variant text-lg max-w-2xl mx-auto">
-              We cut through the red tape to provide the fastest, most reliable cargo protection
-              in the industry.
+              We cut through the red tape to provide straightforward cargo protection built
+              for trucking.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -188,13 +160,13 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-black font-headline text-primary mb-4">Fast</h3>
               <p className="text-on-surface-variant leading-relaxed mb-6">
-                Receive bindable quotes in under 5 minutes. No more waiting on brokers while your
-                fleet is idle.
+                Request a quote online and skip the runaround. We keep the process simple so your
+                fleet stays moving.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3 text-sm font-bold text-primary">
                   <CheckCircle className="text-secondary text-sm" />
-                  Instant COIs
+                  Certificates of Insurance
                 </li>
                 <li className="flex items-center gap-3 text-sm font-bold text-primary">
                   <CheckCircle className="text-secondary text-sm" />
@@ -210,7 +182,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-black font-headline text-primary mb-4">Flexible</h3>
               <p className="text-on-surface-variant leading-relaxed mb-6">
-                Customized limits up to $10M. Whether you haul dry van or reefer, we have the right
+                Limits matched to your freight. Whether you haul dry van or reefer, we have the right
                 fit.
               </p>
               <ul className="space-y-3">
@@ -232,17 +204,17 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-black font-headline text-primary mb-4">Reliable</h3>
               <p className="text-on-surface-variant leading-relaxed mb-6">
-                Backed by A+ rated carriers and a claims team that understands trucking logistics
-                inside out.
+                Coverage placed with insurance carriers, with claims support that understands
+                trucking logistics.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3 text-sm font-bold text-primary">
                   <CheckCircle className="text-secondary text-sm" />
-                  24/7 Claims Support
+                  Claims Support
                 </li>
                 <li className="flex items-center gap-3 text-sm font-bold text-primary">
                   <CheckCircle className="text-secondary text-sm" />
-                  Dedicated Adjusters
+                  Trucking-Focused Claims Help
                 </li>
               </ul>
             </div>
@@ -334,7 +306,7 @@ export default function Home() {
             Ready to secure your journey?
           </h2>
           <p className="text-on-surface-variant text-xl mb-12 leading-relaxed">
-            Join thousands of professional drivers who trust Trucker Cargo Insurance for their cargo
+            Talk to Trucker Cargo Insurance about your cargo
             liability and fleet insurance needs.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">

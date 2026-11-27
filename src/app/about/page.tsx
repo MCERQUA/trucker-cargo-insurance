@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/about`,
     title: "About Trucker Cargo Insurance",
     description:
-      "Insurance specialists dedicated exclusively to the trucking industry. Serving owner-operators and fleets across 48 states.",
+      "Insurance specialists dedicated exclusively to the trucking industry. Serving owner-operators and fleets.",
     siteName: "Trucker Cargo Insurance",
     locale: "en_US",
   },
@@ -32,22 +32,22 @@ const schema = {
 };
 
 const stats = [
-  { label: "States Covered", value: "48" },
+  { label: "Industry Focus", value: "Trucking" },
   { label: "Years of Experience", value: "15+" },
-  { label: "Carriers Served", value: "12,000+" },
-  { label: "Avg Quote Time", value: "5 min" },
+  { label: "Coverage", value: "Cargo & Liability" },
+  { label: "Based In", value: "Chandler, AZ" },
 ];
 
 const values = [
   {
     icon: Shield,
     title: "Industry Expertise",
-    body: "We work exclusively with trucking and logistics operations. That focus means we understand your risks better than any generalist broker.",
+    body: "We work exclusively with trucking and logistics operations. That focus means we understand the risks of the trucking industry.",
   },
   {
     icon: Speed,
     title: "Speed Without Sacrifice",
-    body: "Fast quotes don't mean cut corners. Our bindable quotes deliver real coverage in minutes, backed by A+ rated carriers.",
+    body: "Fast quotes don't mean cut corners. Our quote process is built to be quick and simple, so you can get back on the road.",
   },
   {
     icon: VerifiedUser,
@@ -75,7 +75,7 @@ export default function AboutPage() {
           </h1>
           <p className="text-on-primary-container text-xl leading-relaxed max-w-2xl mx-auto">
             Trucker Cargo Insurance is a dedicated trucking insurance agency based in Chandler, Arizona.
-            We serve owner-operators, small fleets, and freight brokers across 48 states with precision
+            We serve owner-operators, small fleets, and freight brokers with precision
             cargo coverage and FMCSA-compliant filings.
           </p>
         </div>
@@ -110,8 +110,8 @@ export default function AboutPage() {
               </p>
               <p className="text-on-surface-variant leading-relaxed mb-4">
                 We built Trucker Cargo Insurance to change that. By focusing exclusively on
-                commercial trucking, we can offer faster quotes, better coverage, and deeper
-                expertise than any generalist broker.
+                commercial trucking, we can offer trucking-specific coverage and deeper
+                trucking expertise.
               </p>
               <p className="text-on-surface-variant leading-relaxed">
                 Our founder, Josh Cotner, is a commercial insurance specialist with over 15 years
@@ -121,12 +121,11 @@ export default function AboutPage() {
             </div>
             <div className="space-y-4">
               {[
-                "A+ rated insurance carriers",
                 "FMCSA-compliant filings included",
-                "48-state coverage",
-                "Bindable quotes in 5 minutes",
-                "Dedicated claims advocates",
-                "No hidden fees or brokerages",
+                "Trucking and logistics focus",
+                "Motor truck cargo coverage",
+                "Primary liability and physical damage",
+                "Claims support",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3">
                   <CheckCircle className="text-secondary text-xl flex-shrink-0" />
@@ -146,7 +145,7 @@ export default function AboutPage() {
               What Sets Us Apart
             </h2>
             <p className="text-on-surface-variant max-w-xl mx-auto">
-              We don't compete on price alone — we compete on expertise, speed, and advocacy.
+              We don't compete on price alone — we compete on expertise and advocacy.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -188,7 +187,7 @@ export default function AboutPage() {
                 </p>
                 <p className="text-on-surface-variant leading-relaxed">
                   Josh holds multiple commercial lines licenses and maintains relationships with
-                  the leading specialty markets for trucking cargo coverage. He's personally
+                  specialty markets for trucking cargo coverage. He's personally
                   involved in underwriting complex accounts and claims advocacy for his clients.
                 </p>
               </div>
